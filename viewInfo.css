@@ -1,0 +1,295 @@
+@font-face {
+    font-family: 'ONE-Mobile-Title';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-Title.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+
+
+.orange {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+}
+
+.main {
+    box-sizing: border-box;
+    margin: 5% 5%;
+    width: 90%;
+    height: 55em;
+    background-color: #FF7710;
+    display: flex;
+    flex-direction: column;
+}
+
+.helloFriends {
+    width: 312px;
+    height: 24px;
+    margin-top: 120px;
+    margin-bottom: 26px;
+}
+
+.info {
+    border-radius: 12px;
+    background: #FFF;
+    width: 60%;
+    max-width: 885px;
+    height: 200px;
+    margin-bottom: 109px;
+    margin-top: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.viewYourRegister {
+    max-height: 61.05px;
+    min-width: 388px;
+    width: 35%;
+}
+
+
+
+button {
+    width: 60%;
+    max-width: 885px;
+    height: 104px;
+    flex-shrink: 0;
+    border: 0;
+    border-radius: 18px;
+    background: #FFF;
+    color: #FF7710;
+
+    font-family: "ONE Mobile Title OTF";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.tags,
+.responses {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
+
+.tag {
+    color: #FF7710;
+    font-family: 'ONE-Mobile-Title';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-Title.woff') format('woff');
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 24px 0;
+}
+
+.response {
+    color: #FF7710;
+    font-family: 'ONE-Mobile-Title';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-Title.woff') format('woff');
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 17px 0;
+}
+
+@media all and (max-width:479px) {
+    .main {
+        margin: 0;
+        width: 100%;
+        height: 950px;
+    }
+
+    .helloFriends {
+        height: 10px;
+    }
+
+    .viewYourRegister {
+        height: 19px;
+        min-height: none;
+        min-width: none;
+    }
+
+    button {
+        width: 60%;
+        height: 40px;
+        border-radius: 18px;
+        font-size: 15px;
+    }
+}
+
+@media all and (min-width:480px) and (max-width:820px) {
+    .main {
+        margin: 0;
+        width: 100%;
+        height: 950px;
+    }
+
+    .viewYourRegister {
+        max-height: 27px;
+        min-height: none;
+        min-width: none;
+    }
+
+    .helloFriends {
+        height: 15px;
+    }
+
+    button {
+        width: 60%;
+        min-width: 400px;
+        height: 60px;
+        border-radius: 18px;
+        font-size: 25px;
+    }
+
+    .info {
+        min-width: 400px;
+    }
+}

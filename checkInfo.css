@@ -1,0 +1,312 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+
+
+
+.orange {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 1s;
+}
+
+.main {
+    box-sizing: border-box;
+    margin: 5% 5%;
+    width: 90%;
+    height: 55em;
+    background-color: #FF7710;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.checkYourRegister {
+    max-width: 1084px;
+    min-width: 740px;
+    max-height: 70px;
+    width: 70%;
+}
+
+.helloFriends {
+    width: 312px;
+    height: 24px;
+    margin-top: 120px;
+    margin-bottom: 26px;
+}
+
+.labelStyle {
+    color: #FFF;
+    font-size: 32px;
+}
+
+.inputStyle {
+    width: 100%;
+    height: 63px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    border: 2px solid #FFF;
+    background-color: #FF7710;
+    color: #FFF;
+    font-family: Pretendard;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+
+}
+
+.inputStyle::placeholder {
+    color: #FFF;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 96px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 36px;
+    width: 50%;
+    max-width: 753px;
+}
+
+.column:nth-of-type(2) {
+    margin-bottom: 125px;
+}
+
+button {
+    width: 60%;
+    max-width: 885px;
+    height: 104px;
+    flex-shrink: 0;
+    border: 0;
+    border-radius: 18px;
+    background: #FFF;
+    color: #FF7710;
+
+    font-family: "ONE Mobile Title OTF";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+@media all and (max-width:479px) {
+    .main {
+        margin: 0;
+        width: 100%;
+        height: 950px;
+    }
+
+    .helloFriends {
+        height: 10px;
+    }
+
+    .checkYourRegister {
+        height: 19px;
+    }
+
+    button {
+        width: 60%;
+        max-width: 885px;
+        height: 40px;
+        border-radius: 18px;
+        font-size: 15px;
+    }
+
+    .labelStyle {
+        font-size: 15px;
+    }
+
+    .inputStyle {
+        height: 40px;
+        border-radius: 12px;
+        font-size: 15px;
+    }
+}
+
+@media all and (min-width:480px) and (max-width:820px) {
+    .main {
+        margin: 0;
+        width: 100%;
+        height: 950px;
+    }
+
+    .helloFriends {
+        height: 15px;
+    }
+
+    .checkYourRegister {
+        max-height: 27px;
+    }
+
+    button {
+        width: 60%;
+        min-width: 388px;
+        height: 60px;
+        border-radius: 18px;
+        font-size: 25px;
+
+    }
+
+    .labelStyle {
+        font-size: 25px;
+    }
+
+    .inputStyle {
+        height: 60px;
+        border-radius: 12px;
+        font-size: 25px;
+    }
+
+    .column {
+        width: 50%;
+        min-width: 330px;
+    }
+}
