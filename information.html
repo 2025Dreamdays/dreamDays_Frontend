@@ -29,6 +29,13 @@
                     <input type="text" id="ip_name" name="name" placeholder="이름을 입력하세요.">
                 </div>
             </section>
+
+            <section class="form_ct">
+                <div class="name_ct">
+                    <div class="age"> 나이 </div>
+                    <input type="text" id="ip_age" name="age" placeholder="나이를 입력하세요.">
+                </div>
+            </section>
             
             <section class="form_ct">
                 <div class="name_ct">
@@ -36,11 +43,11 @@
                     <div class="ip_ct">
                         <div class="man_ct">
                             <input type="checkbox" name="gender" id="men_ck"> 
-                            <div class="gender_man"> 남자 </div>
+                            <div class="gender_man"> 남성 </div>
                         </div>
                         <div class="women_ct">
                             <input type="checkbox" name="gender" id="women_ck"> 
-                            <div class="gender_woman"> 여자 </div>
+                            <div class="gender_woman"> 여성 </div>
                         </div>
                     </div>
                 </div>        
@@ -49,14 +56,47 @@
             <section class="form_ct">
                 <div class="name_ct">
                     <div class="major"> 학과</div>
-                    <select id="dp_major" name="major" placeholder="학과를 선택하세요."></select>
+                    <select id="dp_major" name="major" placeholder="학과를 선택하세요.">
+                        <option value="" selected hidden> 학과를 선택해주세요 </option>
+                        <option value="첨단학부"> 첨단학부 </option>
+                        <option value="자연계열학부"> 자연계열학부 </option>
+                        <option value="인문사회계열학부"> 인문사회계열학부 </option>
+                        <option value="자유전공학부"> 자유전공학부 </option>
+                        <option value="임상병리학과"> 임상병리학과 </option>
+                        <option value="방사선학과"> 방사선학과 </option>
+                        <option value="안경광학과"> 안경광학과 </option>
+                        <option value="응급구조학과"> 응급구조학과 </option>
+                        <option value="의료경영학과"> 의료경영학과 </option>
+                        <option value="물리치료학과"> 물리치료학과 </option>
+                        <option value="치위생학과"> 치위생학과 </option>
+                        <option value="간호학과"> 간호학과 </option>
+                        <option value="의예과"> 의예과 </option>
+                    </select>
                 </div>
             </section>
 
             <section class="form_ct">
                 <div class="name_ct">
                     <div class="mbti"> MBTI </div>
-                    <select id="dp_mbti" name="mbti" placeholder="MBTI를 선택하세요."></select>
+                    <select id="dp_mbti" name="mbti" placeholder="MBTI를 선택하세요.">
+                        <option value="" selected hidden> MBTI를 선택하세요</option>
+                        <option value="INTJ"> INTJ </option>
+                        <option value="INTP"> INTP </option>
+                        <option value="INFJ"> INFJ </option>
+                        <option value="INFP"> INFP </option>
+                        <option value="ISTJ"> ISTJ </option>
+                        <option value="ISFJ"> ISFJ </option>
+                        <option value="ISTP"> ISTP </option>
+                        <option value="ISFP"> ISFP </option>
+                        <option value="ENTJ"> ENTJ </option>
+                        <option value="ENTP"> ENTP </option>
+                        <option value="ENFJ"> ENFJ </option>
+                        <option value="ENFP"> ENFP </option>
+                        <option value="ESTJ"> ESTJ </option>
+                        <option value="ESFJ"> ESFJ </option>
+                        <option value="ESTP"> ESTP </option>
+                        <option value="ESFP"> ESFP </option>
+                    </select>
                 </div>    
                 </section>
 
@@ -80,12 +120,12 @@
                     <div class="ip_ct">
                         <div class="it_men_ct">
                             <input type="checkbox" class="ip_it_gender" name="it_gender"> 
-                            <div class="it_men">남자</div>
+                            <div class="it_men">남성</div>
                         </div>
                         
                         <div class="it_women_ct">
                             <input type="checkbox" class="ip_it_gender" name="it_gender">
-                            <div class="it_women"> 여자 </div>
+                            <div class="it_women"> 여성 </div>
                         </div>
   
                     </div>
@@ -114,6 +154,19 @@
             </div>
         </section>
         <button class="sus" id="suss" style="display: none;"> 등록 완료하기 </button>
+
+       
+    <div id="modal" class="modal">
+        <div class="modal-ct">
+            <span class="close">&times;</span>
+            <h2>개인정보 수집 동의</h2>
+            <p> 개인정보의 수집 이용 제공
+                수집 이용 제공 목적 : 
+
+            </p>
+        </div>
+</div>
+
     </main>
 
     <script src="information.js"></script>
