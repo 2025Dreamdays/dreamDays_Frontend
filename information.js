@@ -1,3 +1,6 @@
+const button = document.querySelector(".sus")
+
+
 document.addEventListener("DOMContentLoaded", function () {
     const registerBtn = document.getElementById("registerBtn");
     const infoForm = document.getElementById("infoForm");
@@ -12,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
         registerBtn.style.display = "none"; // 버튼 숨기기
     });
 });
+
 const modal = document.getElementById("modal");
 const modalOpenBtn = document.querySelector(".add"); 
 const modalCloseBtn = document.querySelector(".close");
@@ -47,3 +51,4 @@ document.getElementById("dp_mbti").addEventListener("change", function() {
         this.style.color = "white";
     }
 });
+

@@ -32,16 +32,25 @@ let now = new Date();
 
 let dreamD = new Date("2025-02-19");
 
-console.log(now > dreamD);
-if (now > dreamD) {
+console.log(now < dreamD);
+if (now < dreamD) {
     checkInfo.disabled = true;
 }
 
 
 //입력한 정보 확인 페이지 이동
-const checkDisplayLink = () => {
+const checkOrangeDisplayLink = () => {
     setTimeout(() => {
         window.location.href = "file:///C:/Users/sieun/Desktop/dd/dreamDays_Frontend/checkInfo.html"
     }, 1100)
 }
-checkInfo.addEventListener('click', checkDisplayLink);
+checkInfo.addEventListener('click', checkOrangeDisplayLink);
+
+
+
+const checkBlackDisplayLink = () => {
+    setTimeout(() => {
+        window.location.href = "file:///C:/Users/sieun/Desktop/dd/dreamDays_Frontend/information.html"
+    }, 1100)
+}
+registerInfo.addEventListener('click', checkBlackDisplayLink);

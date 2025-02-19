@@ -1,4 +1,3 @@
-
 @font-face {
   font-family: 'Pretendard-Regular';
   src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
@@ -12,13 +11,14 @@
   font-weight: normal;
   font-style: normal;
 }
+
 /* @media screen and (max-width: 480px) {
 
     .main {
         margin: 5% 5%;
         width : 90%;
         /* height : 90vh; */
-        /* background-color: black; 
+/* background-color: black; 
     }
     
     .hf {
@@ -75,51 +75,53 @@
     /* 스마트폰 전용 스타일 
   }
    */
-  /* 태블릿 (가로, 세로) */
-  @media screen and (min-width: 481px) and (max-width: 768px) {
-    /* 태블릿 전용 스타일 */
-  }
-  
-  /* 노트북 (작은 화면) */
-  @media screen and (min-width: 769px) and (max-width: 1024px) {
-    /* 노트북 전용 스타일 */
-  }
-  
-  /* 데스크톱 (일반 모니터) */
-  @media screen and (min-width: 1025px) and (max-width: 1440px) {
-    /* 데스크톱 전용 스타일 */
-  }
-  
-  /* 대형 화면 (4K, 울트라 와이드) */
-  @media screen and (min-width: 1441px) {
-    /* 대형 화면 전용 스타일 */
-  }
-  
+/* 태블릿 (가로, 세로) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  /* 태블릿 전용 스타일 */
+}
+
+/* 노트북 (작은 화면) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /* 노트북 전용 스타일 */
+}
+
+/* 데스크톱 (일반 모니터) */
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  /* 데스크톱 전용 스타일 */
+}
+
+/* 대형 화면 (4K, 울트라 와이드) */
+@media screen and (min-width: 1441px) {
+  /* 대형 화면 전용 스타일 */
+}
+
 .main {
-      max-height: 100vh; /* 화면 높이를 초과하지 않도록 설정 */
-      overflow-y: auto; /* 세로 스크롤 가능하도록 설정 */
-      /* overflow-x: hidden;  */
-      position: relative;
-      background-color: #1C1B1A;  
-      margin: 5% 5%;
-      width : 90%;
-      height: 90vh;
-      justify-items: center;
-  }
+  max-height: 100vh;
+  /* 화면 높이를 초과하지 않도록 설정 */
+  overflow-y: auto;
+  /* 세로 스크롤 가능하도록 설정 */
+  /* overflow-x: hidden;  */
+  position: relative;
+  background-color: #1C1B1A;
+  margin: 5% 5%;
+  width: 90%;
+  height: 90vh;
+  justify-items: center;
+}
 
 .hf {
-    color : white;
-    text-align: center;
-    padding-top: 15%;
-    font-size: 150%;
-    /* max-width: 312px; */
+  color: white;
+  text-align: center;
+  padding-top: 15%;
+  font-size: 150%;
+  /* max-width: 312px; */
 }
 
 .if_reg {
-    color: white;
-    text-align: center;
-    padding-top: 2%;
-    font-size: 100%;
+  color: white;
+  text-align: center;
+  padding-top: 2%;
+  font-size: 100%;
 }
 
 .middle {
@@ -128,67 +130,68 @@
 }
 
 .if_bt {
-    margin-top: 20%;
-    width : 885px;
-    height : 104px;
-    border-radius: 18px;
-    background: #FFF;
+  margin-top: 20%;
+  width: 885px;
+  height: 104px;
+  border-radius: 18px;
+  background: #FFF;
 }
 
 
 .ip_form {
-    display: flex;
-    flex-direction: column;
-    justify-self: center;
-    margin-top: 10%;
-    gap:10px;
-    color:white;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  margin-top: 10%;
+  gap: 10px;
+  color: white;
 }
 
 .form_all_ct {
-  display :flex;
+  display: flex;
   flex-direction: column;
-  gap : 70px;
+  gap: 70px;
 }
+
 
 #ip_name, #ip_age {
 font-family: 'Pretendard-Regular';
   src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-font-size: 28px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 #dp_major {
   color: #BBBBBB;
   font-family: 'Pretendard-Regular';
   src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-font-size: 28px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 .ip_id, .ip_liner {
   color: #BBBBBB;
   font-family: 'Pretendard-Regular';
   src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-font-size: 28px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-  
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
 }
 
 .ip_liner {
   color: #BBBBBB;
   font-family: 'Pretendard-Regular';
   src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-font-size: 28px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 .name, .age, .gender, .major, .mbti, .insta_id, .one_liner, .it_gender {
@@ -196,7 +199,7 @@ line-height: normal;
   src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
   font-weight: 600;
   font-style: normal;
-  font-size:32px;
+  font-size: 32px;
   line-height: normal;
 
 }
@@ -204,132 +207,142 @@ line-height: normal;
 
 
 .name_ct {
-  display : flex;
+  display: flex;
   flex-direction: column;
-  gap : 30px;
+  gap: 30px;
 
 }
 
 .name_ct input {
-  width : 753px;
-  margin : 0px;
-  padding : 0px;
+  width: 753px;
+  margin: 0px;
+  padding: 0px;
   height: 63px;
   background-color: #1C1B1A;
   border-radius: 12px;
-border: 1px solid #FFF;
+  border: 1px solid #FFF;
   border-color: #FFFFFF;
   text-align: center;
-  color : #FFFFFF;
+  color: #FFFFFF;
 
 }
 
 .name_ct select {
-  width : 753px;
+  width: 753px;
   height: 63px;
   background-color: #1C1B1A;
   border-radius: 12px;
-border: 1px solid #FFF;
+  border: 1px solid #FFF;
   border-color: #FFFFFF;
-  color : #FFFFFF;
+  color: #FFFFFF;
   text-align: center;
-  
+
 }
 
 
 
 .form_ct {
-    justify-self: center;
-    color : white;
+  justify-self: center;
+  color: white;
 }
 
 .bottom {
-  color : white;
+  color: white;
 }
 
 .ip_ct {
-  display : flex;
+  display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
 
 .man_ct {
-  display : flex;
+  display: flex;
   flex-direction: row;
-  gap :30px;
+  gap: 30px;
 }
 
 .gender_man {
   color: #FFF;
   font-family: 'Pretendard-Regular';
   src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-font-size: 30px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 .gender_woman {
   color: #FFF;
   font-family: 'Pretendard-Regular';
   src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-font-size: 30px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 .man_ct input {
-  appearance: none; /* 브라우저 기본 스타일 제거 */
-  width: 36px;
-height: 36px;
-flex-shrink: 0;
-border-radius: 5px;
-border: 1px solid #FFF;
-background-color: #1C1B1A; /* 체크박스 배경색 */
-}
-
-.women_ct {
-  display : flex;
-  flex-direction: row;
-  gap:30px;
-}
-
-.women_ct input {
-  appearance: none; /* 브라우저 기본 스타일 제거 */
+  appearance: none;
+  /* 브라우저 기본 스타일 제거 */
   width: 36px;
   height: 36px;
   flex-shrink: 0;
   border-radius: 5px;
   border: 1px solid #FFF;
-  background-color: #1C1B1A; /* 체크박스 배경색 */
+  background-color: #1C1B1A;
+  /* 체크박스 배경색 */
+}
+
+.women_ct {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.women_ct input {
+  appearance: none;
+  /* 브라우저 기본 스타일 제거 */
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid #FFF;
+  background-color: #1C1B1A;
+  /* 체크박스 배경색 */
 }
 
 .ip_ct input[type="checkbox"] {
-  appearance: none; /* 브라우저 기본 스타일 제거 */
+  appearance: none;
+  /* 브라우저 기본 스타일 제거 */
   width: 36px;
-height: 36px;
-flex-shrink: 0;
-border-radius: 5px;
-border: 1px solid #FFF;
-background-color: #1C1B1A; /* 체크박스 배경색 */
+  height: 36px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid #FFF;
+  background-color: #1C1B1A;
+  /* 체크박스 배경색 */
 }
+
 
 .it_men_ct, .it_women_ct, .it_none_ct {
   display : flex;
+
   flex-direction: row;
-  gap :30px;
+  gap: 30px;
 }
 
 .it_men, .it_women, .it_none {
+
   color: #FFF;
   font-family: 'Pretendard-Regular';
   src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-font-size: 30px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
+
 
 
 .pattern-line {
@@ -337,67 +350,68 @@ line-height: normal;
   height: 1px;
   justify-self: center;
   margin-top: 6%;
-  background: repeating-linear-gradient(
-      to right,
+  background: repeating-linear-gradient(to right,
       #FFFFFF 0px,
       #FFFFFF 10px,
       transparent 10px,
-      transparent 20px
-  );
+      transparent 20px);
 }
 
 .bottom {
   justify-self: center;
-  width : 755px;
+  width: 755px;
   margin-top: 5%;
 }
+
 .agree_all_ct {
-  display : flex;
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap : 20px;
+  gap: 20px;
 }
 
 .agree_ct {
-  display : flex;
+  display: flex;
   flex-direction: row;
-  gap : 30px;
+  gap: 30px;
 }
 
 .ip_agree[type="checkbox"] {
-  appearance: none; /* 브라우저 기본 스타일 제거 */
+  appearance: none;
+  /* 브라우저 기본 스타일 제거 */
   width: 34px;
   height: 34px;
   flex-shrink: 0;
   border-radius: 5px;
   border: 1px solid #FFF;
-background-color: #1C1B1A; /* 체크박스 배경색 */
+  background-color: #1C1B1A;
+  /* 체크박스 배경색 */
 }
 
 .agree {
   color: #FFF;
   font-family: 'Pretendard-Regular';
   src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-font-size: 32px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 
 .add {
   color: #FFF;
   font-family: 'Pretendard-Regular';
   src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-font-size: 24px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-text-decoration-line: underline;
-text-decoration-style: solid;
-text-decoration-skip-ink: auto;
-text-decoration-thickness: auto;
-text-underline-offset: auto;
-text-underline-position: from-font;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: auto;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
 }
 
 .semi_if {
@@ -405,10 +419,11 @@ text-underline-position: from-font;
   color: #FFF;
   font-family: 'Pretendard-Regular';
   src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-font-size: 24px;
-font-style: normal;
-font-weight: 400;
-line-height: 52px; /* 216.667% */
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 52px;
+  /* 216.667% */
 }
 
 .sus {
@@ -424,20 +439,22 @@ line-height: 52px; /* 216.667% */
   font-weight: 400;
   line-height: normal;
   color: #000;
-  margin-top : 10%;
+  margin-top: 10%;
   margin-bottom: 20%;
 }
 
 /* 기본 체크박스 스타일 */
 .ip_ct input[type="checkbox"],
 .ip_agree[type="checkbox"] {
-  appearance: none; /* 기본 체크 스타일 제거 */
+  appearance: none;
+  /* 기본 체크 스타일 제거 */
   width: 36px;
   height: 36px;
   flex-shrink: 0;
   border-radius: 5px;
   border: 1px solid #FFF;
-  background-color: #1C1B1A; /* 기본 배경색 */
+  background-color: #1C1B1A;
+  /* 기본 배경색 */
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -447,6 +464,7 @@ line-height: 52px; /* 216.667% */
 /* 체크되었을 때 SVG 아이콘 추가 */
 .ip_ct input[type="checkbox"]:checked,
 .ip_agree[type="checkbox"]:checked {
+
   background-image: url('img/checkbox_img.svg'); /* 체크된 상태의 SVG */
   border-color: transparent; /* 경계선을 없애기 */
   background-color: transparent; /* 배경 투명 */
@@ -1357,4 +1375,5 @@ line-height: normal;
   #ip_age::placeholder, #ip_name::placeholder, .ip_id::placeholder, .ip_liner::placeholder{
     color:#BBBBBB;
   }
+
 }

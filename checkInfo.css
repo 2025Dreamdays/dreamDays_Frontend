@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'ONE-Mobile-Title';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-Title.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -137,8 +144,6 @@ table {
 
 
 
-
-
 .orange {
     display: flex;
     flex-direction: column;
@@ -148,13 +153,14 @@ table {
 
 .main {
     box-sizing: border-box;
-    margin: 5% 5%;
-    width: 90%;
-    height: 55em;
+    margin: 51px auto;
+    width: 92%;
+    height: 978px;
     background-color: #FF7710;
     display: flex;
     flex-direction: column;
 }
+
 
 
 .checkYourRegister {
@@ -174,6 +180,7 @@ table {
 .labelStyle {
     color: #FFF;
     font-size: 32px;
+    margin-bottom: 21px;
 }
 
 .inputStyle {
@@ -229,7 +236,8 @@ button {
     background: #FFF;
     color: #FF7710;
 
-    font-family: "ONE Mobile Title OTF";
+    font-family: 'ONE-Mobile-Title';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-Title.woff') format('woff');
     font-size: 36px;
     font-style: normal;
     font-weight: 400;
@@ -238,10 +246,15 @@ button {
 
 
 @media all and (max-width:479px) {
+
+    .column {
+        margin-bottom: 15px;
+    }
+
     .main {
         margin: 0;
         width: 100%;
-        height: 950px;
+        height: 100vh;
     }
 
     .helloFriends {
@@ -260,8 +273,13 @@ button {
         font-size: 15px;
     }
 
+    form {
+        margin-top: 80px;
+    }
+
     .labelStyle {
         font-size: 15px;
+        margin-bottom: 13px;
     }
 
     .inputStyle {
@@ -269,13 +287,17 @@ button {
         border-radius: 12px;
         font-size: 15px;
     }
+
+    .column:nth-of-type(2) {
+        margin-bottom: 90px;
+    }
 }
 
-@media all and (min-width:480px) and (max-width:820px) {
+@media all and (min-width:480px) and (max-width:1024px) {
     .main {
         margin: 0;
         width: 100%;
-        height: 950px;
+        height: 100vh;
     }
 
     .helloFriends {
@@ -297,6 +319,7 @@ button {
 
     .labelStyle {
         font-size: 25px;
+
     }
 
     .inputStyle {
