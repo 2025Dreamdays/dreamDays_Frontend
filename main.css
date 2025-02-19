@@ -140,13 +140,13 @@ table {
 
 .body {
     margin: 0px;
+
 }
 
 .orange {
     background-color: #FF7710;
     width: 50%;
     height: 100%;
-    padding: 5% 7%;
     display: flex;
     flex-direction: column;
     align-items: space-evenly;
@@ -157,7 +157,6 @@ table {
     background-color: #1C1B1A;
     width: 50%;
     height: 100%;
-    padding: 5% 7%;
     transition: 1s;
 }
 
@@ -169,11 +168,19 @@ table {
     justify-items: right;
 }
 
+.blackDisplay {
+    margin-right: 98px;
+}
+
+.orangeDisplay {
+    margin-left: 98px;
+}
+
 .main {
     box-sizing: border-box;
-    margin: 5% 5%;
-    width: 90%;
-    height: 45em;
+    margin: 51px auto;
+    width: 92%;
+    height: 978px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -181,9 +188,9 @@ table {
 
 .likelion {
     position: fixed;
-    width: 150px;
-    height: 150px;
-    top: 50%;
+    width: 287px;
+    height: 287px;
+    top: 400px;
 }
 
 .checkInfo {
@@ -205,11 +212,34 @@ table {
 }
 
 .hello {
-    margin-bottom: 8em;
+    margin-top: 87.53px;
+    margin-bottom: 149.34px;
+}
+
+.preRe {
+    margin-bottom: 25.98px;
+}
+
+.right {
+    text-align: right;
+}
+
+.explainButton {
+    margin-bottom: 18.87px;
+}
+
+.titleV,
+.titleX {
+    display: flex;
+    flex-direction: row;
+}
+
+.mark {
+    margin: 0px 25.51px;
 }
 
 .button {
-    margin-top: 8em;
+    margin-top: 161.36px;
 }
 
 .none {
@@ -222,19 +252,18 @@ table {
 
 .minWidth {
     width: 0px;
-    padding: 5% 0px;
 }
 
 
 
-@media all and (max-width:820px) {
+@media all and (max-width:1024px) {
     .likelion {
         display: none;
     }
 
     .main {
         width: 100%;
-        height: 950px;
+        height: 100vh;
         margin: 0;
         flex-direction: column-reverse;
         align-items: center;
@@ -244,15 +273,12 @@ table {
     .orange {
         width: 100%;
         height: 50%;
-        padding: 5% 7%;
         transition: 1s;
     }
 
     .black {
         width: 100%;
         height: 50%;
-        padding: 5% 7%;
-
         transition: 1s;
     }
 
@@ -277,6 +303,11 @@ table {
         height: 100px;
     }
 
+    .mark {
+        height: 42px;
+        margin-top: 0;
+    }
+
     .registerInfo>img {
         width: 90px;
         height: 15px;
@@ -296,20 +327,28 @@ table {
         height: 42px;
     }
 
+    .explainButton {
+        margin-top: 20.94px;
+        margin-bottom: 12.15px;
+    }
+
     .explainButton>img {
         height: 13px;
     }
 
     .preRe {
         height: 15px;
+        margin-top: 80px;
+        margin-bottom: 15.61px;
     }
 
     .orangeDisplay {
-        padding-top: 130px;
+        margin-left: 34px;
     }
 
     .blackDisplay {
-        padding-top: 80px;
+        margin-right: 0px;
+        margin-left: 34px;
     }
 
     .maxWidth {
@@ -320,10 +359,20 @@ table {
         height: 0px;
         padding: 0px 5%;
     }
+
+    .titleX {
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+
+    .right {
+        text-align: left;
+    }
+
 }
 
 
-@media all and (min-width:480px) and (max-width:820px) {
+@media all and (min-width:480px) and (max-width:1024px) {
     .likelion {
         display: none;
     }
@@ -336,6 +385,13 @@ table {
         height: 170px;
         width: 270px;
 
+    }
+
+    .mark {
+        height: 60px;
+
+        margin: 0px 15px;
+        margin-top: 10px;
     }
 
     .explainButton>img {
@@ -361,7 +417,59 @@ table {
         height: 50px;
     }
 
+    .main {
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .right {
+        text-align: left;
+    }
 
 
 
+}
+
+
+@media all and (min-width:1025px) and (max-width:1650px) {
+    .likelion {
+        display: none;
+    }
+
+    .hello {
+        height: 12px;
+    }
+
+    .preRe {
+        height: 12px;
+    }
+
+    .mark {
+        height: 55px;
+    }
+
+    .big {
+        height: 130px;
+    }
+
+    .explainButton {
+        height: 10px;
+    }
+
+    .registerInfo>img,
+    .checkInfo>img {
+        height: 27px;
+    }
+
+    .blackDisplay {
+        margin-right: 75px;
+    }
+
+    .orangeDisplay {
+        margin-left: 75px;
+    }
 }

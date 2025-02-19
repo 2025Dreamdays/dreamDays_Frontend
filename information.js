@@ -1,3 +1,6 @@
+const button = document.querySelector(".sus")
+
+
 document.addEventListener("DOMContentLoaded", function () {
     const registerBtn = document.getElementById("registerBtn");
     const infoForm = document.getElementById("infoForm");
@@ -12,3 +15,8 @@ document.addEventListener("DOMContentLoaded", function () {
         registerBtn.style.display = "none"; // 버튼 숨기기
     });
 });
+
+const checkDisplayLink = () => {
+    window.location.href = "file:///C:/Users/sieun/Desktop/dd/dreamDays_Frontend/main.html"
+}
+button.addEventListener('click', checkDisplayLink);
