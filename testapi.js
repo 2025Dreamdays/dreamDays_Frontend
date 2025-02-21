@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", async function() {
 
     try {
-        const response = await axios.get("https://eulji-hf.netlify.app/api/users/create-info", data);  // HTTPS로 요청
+        const response = await axios.get("https://eulji-hf.netlify.app/api/users/check-info", data);  // HTTPS로 요청
 
         const student = response.data;
         
