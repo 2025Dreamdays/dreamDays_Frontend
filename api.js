@@ -11,7 +11,7 @@ document.getElementById("suss").addEventListener("click", async function () {
     };
 
     try {
-        const response = await axios.post("/api/users/create-info", data); // ✅ await 추가
+        const response = await axios.post("http://3.39.44.144:8080/api/users/create-info", data);
 
         if (response.status === 200) {
             alert("백엔드 연동 성공! 서버에서 응답 받음 ✅");
