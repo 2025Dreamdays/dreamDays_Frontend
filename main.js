@@ -41,7 +41,7 @@ if (now < dreamD) {
 //입력한 정보 확인 페이지 이동
 const checkOrangeDisplayLink = () => {
     setTimeout(() => {
-        window.location.href = "file:///C:/Users/sieun/Desktop/dd/dreamDays_Frontend/checkInfo.html"
+        window.location.href = "checkInfo.html"
     }, 1100)
 }
 checkInfo.addEventListener('click', checkOrangeDisplayLink);
@@ -50,7 +50,7 @@ checkInfo.addEventListener('click', checkOrangeDisplayLink);
 
 const checkBlackDisplayLink = () => {
     setTimeout(() => {
-        window.location.href = "file:///C:/Users/sieun/Desktop/dd/dreamDays_Frontend/information.html"
+        window.location.href = "information.html"
     }, 1100)
 }
 registerInfo.addEventListener('click', checkBlackDisplayLink);
