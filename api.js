@@ -6,7 +6,7 @@ document.getElementById("suss").addEventListener("click", async function () {
         gender: document.getElementById("men_ck").checked ? "남성" : document.getElementById("women_ck").checked ? "여성" : "",
         department: document.getElementById("dp_major").value,
         mbti: document.getElementById("dp_mbti").value,
-        selectGender: [...document.querySelectorAll(".ip_it_gender:checked")].map(gender => gender.nextElementSibling.textContent),
+        selectGender: document.getElementById("aa").checked ? "남성" : document.getElementById("bb").checked ? "여성" : "",
         bio: document.querySelector(".ip_liner").value,
     };
 
