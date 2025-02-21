@@ -1,5 +1,5 @@
 document.getElementById("suss").addEventListener("click", async function () {
-    
+
     const data = {
         name: document.getElementById("ip_name").value,
         age: document.getElementById("ip_age").value,
@@ -12,7 +12,7 @@ document.getElementById("suss").addEventListener("click", async function () {
     };
 
     try {
-        const response = await axios.post("http://3.39.44.144:8080/api/users/create-info", data);
+        const response = await axios.post("https://3.39.44.144:8080/api/users/create-info", data);
         
         if (response.status === 200) {
             alert("백엔드 연동 성공! 서버에서 응답 받음 ✅");

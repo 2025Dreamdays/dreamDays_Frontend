@@ -642,14 +642,14 @@
   #dp_mbti,
   #dp_major {
     font-family: 'Pretendard-Regular';
-
+    color : #BBBBBB;
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
     font-size: 1.0em;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
   }
-
+  
   #ip_name,
   #ip_age,
   .ip_id,
@@ -864,8 +864,6 @@
   }
 
 
-}
-
 .form_all_ct {
   gap: 70px;
 }
@@ -920,7 +918,7 @@
   border-color: #FFFFFF;
   text-align: center;
   color: #FFFFFF;
-
+}
 
   .it_men,
   .it_women,
@@ -980,6 +978,20 @@
     flex-direction: row;
     align-items: center;
     gap: 30px;
+  }
+  #ip_name,
+  #ip_age,
+  .ip_id,
+  .ip_liner,
+  #dp_mbti,
+  #dp_major {
+    font-family: 'Pretendard-Regular';
+    color : #BBBBBB;
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-size: 1.0em;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
   }
 
   .it_men,
@@ -1174,8 +1186,6 @@
   }
 
 
-}
-
 .form_all_ct {
   gap: 70px;
 }
@@ -1231,8 +1241,21 @@
   border-color: #FFFFFF;
   text-align: center;
   color: #FFFFFF;
-
-
+}
+#ip_name,
+#ip_age,
+.ip_id,
+.ip_liner,
+#dp_mbti,
+#dp_major {
+  font-family: 'Pretendard-Regular';
+  color : #BBBBBB;
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-size: 1.0em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
   .it_men,
   .it_women,
   .it_none,
@@ -1461,9 +1484,6 @@
     color: white;
   }
 
-
-}
-
 .form_all_ct {
   gap: 70px;
 }
@@ -1506,6 +1526,20 @@
   line-height: normal;
 
 }
+#ip_name,
+#ip_age,
+.ip_id,
+.ip_liner,
+#dp_mbti,
+#dp_major {
+  font-family: 'Pretendard-Regular';
+  color : #BBBBBB;
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-size: 1.0em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
 
 .name_ct input,
 .name_ct select {
@@ -1519,7 +1553,7 @@
   border-color: #FFFFFF;
   text-align: center;
   color: #FFFFFF;
-
+}
 
   .it_men,
   .it_women,
