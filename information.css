@@ -75,25 +75,7 @@
     /* 스마트폰 전용 스타일 
   }
    */
-/* 태블릿 (가로, 세로) */
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  /* 태블릿 전용 스타일 */
-}
 
-/* 노트북 (작은 화면) */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  /* 노트북 전용 스타일 */
-}
-
-/* 데스크톱 (일반 모니터) */
-@media screen and (min-width: 1025px) and (max-width: 1440px) {
-  /* 데스크톱 전용 스타일 */
-}
-
-/* 대형 화면 (4K, 울트라 와이드) */
-@media screen and (min-width: 1441px) {
-  /* 대형 화면 전용 스타일 */
-}
 
 .main {
   max-height: 100vh;
@@ -113,15 +95,28 @@
   color: white;
   text-align: center;
   padding-top: 15%;
-  font-size: 150%;
+
   /* max-width: 312px; */
+}
+
+.if_reg>img {
+  height: 61.05px;
+}
+
+.if_reg {
+  height: 61.05px;
+}
+
+
+.hf>img {
+  width: 312px;
+  height: 20px;
+  margin-bottom: 26px;
 }
 
 .if_reg {
   color: white;
   text-align: center;
-  padding-top: 2%;
-  font-size: 100%;
 }
 
 .middle {
@@ -507,8 +502,8 @@
   border-radius: 10px;
   width: 50%;
 
-  height : 50vh;  
-  max-height : 760px;
+  height: 50vh;
+  max-height: 760px;
   text-align: left;
 
   position: relative;
@@ -536,27 +531,32 @@
     justify-items: center;
   }
 
+
+  .hf>img {
+    width: 312px;
+    height: 10px;
+    margin-bottom: 26px;
+  }
+
+
   .hf {
     color: white;
     /* text-align: center; */
     padding-top: 15%;
   }
 
-  .hf img {
-    width: 50%;
-    height: 10px;
-  }
+
 
   .if_reg {
     color: white;
     text-align: center;
-    padding-top: 2%;
+    height: 19px;
   }
 
-  .if_reg img {
-    width: 80%;
-    height: 17px;
+  .if_reg>img {
+    height: 19px;
   }
+
 
   .if_bt {
     margin-top: 20%;
@@ -635,8 +635,13 @@
     line-height: normal;
   }
 
-#ip_name, #ip_age, .ip_id, .ip_liner, #dp_mbti, #dp_major {
-  font-family: 'Pretendard-Regular';
+  #ip_name,
+  #ip_age,
+  .ip_id,
+  .ip_liner,
+  #dp_mbti,
+  #dp_major {
+    font-family: 'Pretendard-Regular';
 
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
     font-size: 1.0em;
@@ -737,35 +742,48 @@
     line-height: 52px;
     /* 216.667% */
   }
-  #ip_age::placeholder, #ip_name::placeholder, .ip_id::placeholder, .ip_liner::placeholder{
-    color:#BBBBBB;
+
+  #ip_age::placeholder,
+  #ip_name::placeholder,
+  .ip_id::placeholder,
+  .ip_liner::placeholder {
+    color: #BBBBBB;
   }
-  .cont { 
+
+  .cont {
     font-family: 'Pretendard-Regular';
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
     font-weight: 700;
     font-style: normal;
-    font-size : 2.5em;
+    font-size: 2.5em;
     margin-top: 0.2em;
-    margin-left : 0.2em;
+    margin-left: 0.2em;
   }
 
   .pf_ct {
-    width : 100%;
-    height : 100vh;
-    margin-left : 0.2em;
-    margin-top : 2em;
+    width: 100%;
+    height: 100vh;
+    margin-left: 0.2em;
+    margin-top: 2em;
   }
-  .first, .second, .third, .quad {
+
+  .first,
+  .second,
+  .third,
+  .quad {
     font-family: 'Pretendard-Regular';
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
     font-weight: 500;
     font-style: normal;
-    font-size : 1.5em;
+    font-size: 1.5em;
     font-weight: bold;
   }
 
-  .first_content, .second_content, .third_content, .quad_f_content, .quad_s_content {
+  .first_content,
+  .second_content,
+  .third_content,
+  .quad_f_content,
+  .quad_s_content {
     font-family: 'Pretendard-Regular';
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
     font-weight: 400;
@@ -795,21 +813,24 @@
     padding-top: 15%;
   }
 
-  .hf img {
-    width: 50%;
-    height: 10px;
+  .hf>img {
+    width: 312px;
+    height: 15px;
+    margin-bottom: 26px;
+  }
+
+  .if_reg>img {
+    height: 27px;
   }
 
   .if_reg {
     color: white;
     text-align: center;
     padding-top: 2%;
+    height: 27px;
   }
 
-  .if_reg img {
-    width: 80%;
-    height: 17px;
-  }
+
 
   .if_bt {
     margin-top: 20%;
@@ -844,63 +865,76 @@
 
 
 }
+
 .form_all_ct {
-  gap : 70px;
+  gap: 70px;
 }
-.name, .age, .gender, .major, .mbti, .insta_id, .one_liner, .it_gender {
+
+.name,
+.age,
+.gender,
+.major,
+.mbti,
+.insta_id,
+.one_liner,
+.it_gender {
   font-family: 'Pretendard-Regular';
   src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
   font-weight: 600;
   font-style: normal;
-  font-size:2em;
+  font-size: 2em;
   line-height: normal;
 
-  }
+}
 
-  .form_all_ct {
-    gap: 30px;
-  }
+.form_all_ct {
+  gap: 30px;
+}
 
-  .name,
-  .age,
-  .gender,
-  .major,
-  .mbti,
-  .insta_id,
-  .one_liner,
-  .it_gender {
-    font-family: 'Pretendard-Regular';
-    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-    font-weight: 600;
-    font-style: normal;
-    font-size: 1.5em;
-    line-height: normal;
-
-  }
-
-  .name_ct input,
-  .name_ct select {
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
-    height: 8vh;
-    background-color: #1C1B1A;
-    border-radius: 12px;
-    border: 1px solid #FFF;
-    border-color: #FFFFFF;
-    text-align: center;
-    color: #FFFFFF;
-
-
-.it_men, .it_women, .it_none, .gender_man, .gender_woman {
-  color: #FFF;
+.name,
+.age,
+.gender,
+.major,
+.mbti,
+.insta_id,
+.one_liner,
+.it_gender {
   font-family: 'Pretendard-Regular';
   src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-font-size: 2em;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.5em;
+  line-height: normal;
+
 }
+
+.name_ct input,
+.name_ct select {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  height: 8vh;
+  background-color: #1C1B1A;
+  border-radius: 12px;
+  border: 1px solid #FFF;
+  border-color: #FFFFFF;
+  text-align: center;
+  color: #FFFFFF;
+
+
+  .it_men,
+  .it_women,
+  .it_none,
+  .gender_man,
+  .gender_woman {
+    color: #FFF;
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-size: 2em;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
 
 
   .gender_man,
@@ -909,11 +943,11 @@ line-height: normal;
     font-family: 'Pretendard-Regular';
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
 
-  font-size: 1.7em;
-  font-style: normal;
-  font-weight: 500;
-  color:#BBBBBB;
-  line-height: normal;
+    font-size: 1.7em;
+    font-style: normal;
+    font-weight: 500;
+    color: #BBBBBB;
+    line-height: normal;
 
   }
 
@@ -932,7 +966,7 @@ line-height: normal;
     font-weight: 400;
     line-height: normal;
     color: #000;
-    margin-top : 10%;
+    margin-top: 10%;
     margin-bottom: 20%;
 
   }
@@ -957,10 +991,10 @@ line-height: normal;
     font-family: 'Pretendard-Regular';
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
 
-  font-size: 2em;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
+    font-size: 2em;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 
   }
 
@@ -987,22 +1021,23 @@ line-height: normal;
     font-family: 'Pretendard-Regular';
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
 
-  font-size: 1.5em;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  text-decoration-line: underline;
-  text-decoration-style: solid;
-  text-decoration-skip-ink: auto;
-  text-decoration-thickness: auto;
-  text-underline-offset: auto;
-  text-underline-position: from-font;
+    font-size: 1.5em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
 
   }
 
   .ip_agree[type="checkbox"] {
 
-    appearance: none; /* 브라우저 기본 스타일 제거 */
+    appearance: none;
+    /* 브라우저 기본 스타일 제거 */
     width: 3em;
     height: 3em;
 
@@ -1019,10 +1054,11 @@ line-height: normal;
     font-family: 'Pretendard-Regular';
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
 
-  font-size: 1.7em;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 52px; /* 216.667% */
+    font-size: 1.7em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 52px;
+    /* 216.667% */
 
   }
 
@@ -1032,32 +1068,41 @@ line-height: normal;
   .ip_liner::placeholder {
     color: #BBBBBB;
   }
-  .cont { 
+
+  .cont {
     font-family: 'Pretendard-Regular';
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
     font-weight: 700;
     font-style: normal;
-    font-size : 2.5em;
+    font-size: 2.5em;
     margin-top: 0.2em;
-    margin-left : 0.2em;
+    margin-left: 0.2em;
   }
 
   .pf_ct {
-    width : 100%;
-    height : 100vh;
-    margin-left : 0.2em;
-    margin-top : 2em;
+    width: 100%;
+    height: 100vh;
+    margin-left: 0.2em;
+    margin-top: 2em;
   }
-  .first, .second, .third, .quad {
+
+  .first,
+  .second,
+  .third,
+  .quad {
     font-family: 'Pretendard-Regular';
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
     font-weight: 500;
     font-style: normal;
-    font-size : 1.5em;
+    font-size: 1.5em;
     font-weight: bold;
   }
 
-  .first_content, .second_content, .third_content, .quad_f_content, .quad_s_content {
+  .first_content,
+  .second_content,
+  .third_content,
+  .quad_f_content,
+  .quad_s_content {
     font-family: 'Pretendard-Regular';
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
     font-weight: 400;
@@ -1087,10 +1132,7 @@ line-height: normal;
     padding-top: 15%;
   }
 
-  .hf img {
-    width: 50%;
-    height: 10px;
-  }
+
 
   .if_reg {
     color: white;
@@ -1098,10 +1140,7 @@ line-height: normal;
     padding-top: 2%;
   }
 
-  .if_reg img {
-    width: 80%;
-    height: 17px;
-  }
+
 
   .if_bt {
     margin-top: 20%;
@@ -1136,64 +1175,77 @@ line-height: normal;
 
 
 }
+
 .form_all_ct {
-  gap : 70px;
+  gap: 70px;
 }
-.name, .age, .gender, .major, .mbti, .insta_id, .one_liner, .it_gender {
+
+.name,
+.age,
+.gender,
+.major,
+.mbti,
+.insta_id,
+.one_liner,
+.it_gender {
   font-family: 'Pretendard-Regular';
   src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
   font-weight: 600;
   font-style: normal;
-  font-size:2.5em;
+  font-size: 2.5em;
   line-height: normal;
 
 
-  }
+}
 
-  .form_all_ct {
-    gap: 30px;
-  }
+.form_all_ct {
+  gap: 30px;
+}
 
-  .name,
-  .age,
-  .gender,
-  .major,
-  .mbti,
-  .insta_id,
-  .one_liner,
-  .it_gender {
-    font-family: 'Pretendard-Regular';
-    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-    font-weight: 600;
-    font-style: normal;
-    font-size: 1.5em;
-    line-height: normal;
-
-  }
-
-  .name_ct input,
-  .name_ct select {
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
-    height: 8vh;
-    background-color: #1C1B1A;
-    border-radius: 12px;
-    border: 1px solid #FFF;
-    border-color: #FFFFFF;
-    text-align: center;
-    color: #FFFFFF;
-
-
-.it_men, .it_women, .it_none, .gender_man, .gender_woman {
-  color: #FFF;
+.name,
+.age,
+.gender,
+.major,
+.mbti,
+.insta_id,
+.one_liner,
+.it_gender {
   font-family: 'Pretendard-Regular';
   src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-font-size: 2em;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.5em;
+  line-height: normal;
+
 }
+
+.name_ct input,
+.name_ct select {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  height: 8vh;
+  background-color: #1C1B1A;
+  border-radius: 12px;
+  border: 1px solid #FFF;
+  border-color: #FFFFFF;
+  text-align: center;
+  color: #FFFFFF;
+
+
+  .it_men,
+  .it_women,
+  .it_none,
+  .gender_man,
+  .gender_woman {
+    color: #FFF;
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-size: 2em;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
 
 
   .gender_man,
@@ -1202,11 +1254,11 @@ line-height: normal;
     font-family: 'Pretendard-Regular';
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
 
-  font-size: 2em;
-  font-style: normal;
-  font-weight: 500;
-  color:#BBBBBB;
-  line-height: normal;
+    font-size: 2em;
+    font-style: normal;
+    font-weight: 500;
+    color: #BBBBBB;
+    line-height: normal;
 
   }
 
@@ -1246,10 +1298,10 @@ line-height: normal;
     font-family: 'Pretendard-Regular';
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
 
-  font-size: 2.5em;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
+    font-size: 2.5em;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 
   }
 
@@ -1258,22 +1310,23 @@ line-height: normal;
     font-family: 'Pretendard-Regular';
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
 
-  font-size: 1.8em;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  text-decoration-line: underline;
-  text-decoration-style: solid;
-  text-decoration-skip-ink: auto;
-  text-decoration-thickness: auto;
-  text-underline-offset: auto;
-  text-underline-position: from-font;
+    font-size: 1.8em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
 
   }
 
   .ip_agree[type="checkbox"] {
 
-    appearance: none; /* 브라우저 기본 스타일 제거 */
+    appearance: none;
+    /* 브라우저 기본 스타일 제거 */
     width: 3.5em;
     height: 3.5em;
 
@@ -1290,10 +1343,11 @@ line-height: normal;
     font-family: 'Pretendard-Regular';
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
 
-  font-size: 2em;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 52px; /* 216.667% */
+    font-size: 2em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 52px;
+    /* 216.667% */
 
   }
 
@@ -1303,32 +1357,41 @@ line-height: normal;
   .ip_liner::placeholder {
     color: #BBBBBB;
   }
-  .cont { 
+
+  .cont {
     font-family: 'Pretendard-Regular';
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
     font-weight: 700;
     font-style: normal;
-    font-size : 2.5em;
+    font-size: 2.5em;
     margin-top: 0.2em;
-    margin-left : 0.2em;
+    margin-left: 0.2em;
   }
 
   .pf_ct {
-    width : 100%;
-    height : 100vh;
-    margin-left : 0.2em;
-    margin-top : 2em;
+    width: 100%;
+    height: 100vh;
+    margin-left: 0.2em;
+    margin-top: 2em;
   }
-  .first, .second, .third, .quad {
+
+  .first,
+  .second,
+  .third,
+  .quad {
     font-family: 'Pretendard-Regular';
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
     font-weight: 500;
     font-style: normal;
-    font-size : 1.5em;
+    font-size: 1.5em;
     font-weight: bold;
   }
 
-  .first_content, .second_content, .third_content, .quad_f_content, .quad_s_content {
+  .first_content,
+  .second_content,
+  .third_content,
+  .quad_f_content,
+  .quad_s_content {
     font-family: 'Pretendard-Regular';
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
     font-weight: 400;
@@ -1358,10 +1421,6 @@ line-height: normal;
     padding-top: 15%;
   }
 
-  .hf img {
-    width: 50%;
-    height: 10px;
-  }
 
   .if_reg {
     color: white;
@@ -1369,10 +1428,7 @@ line-height: normal;
     padding-top: 2%;
   }
 
-  .if_reg img {
-    width: 80%;
-    height: 17px;
-  }
+
 
   .if_bt {
     margin-top: 20%;
@@ -1407,64 +1463,77 @@ line-height: normal;
 
 
 }
+
 .form_all_ct {
-  gap : 70px;
+  gap: 70px;
 }
-.name, .age, .gender, .major, .mbti, .insta_id, .one_liner, .it_gender {
+
+.name,
+.age,
+.gender,
+.major,
+.mbti,
+.insta_id,
+.one_liner,
+.it_gender {
   font-family: 'Pretendard-Regular';
   src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
   font-weight: 600;
   font-style: normal;
-  font-size:2.5em;
+  font-size: 2.5em;
   line-height: normal;
 
 
-  }
+}
 
-  .form_all_ct {
-    gap: 30px;
-  }
+.form_all_ct {
+  gap: 30px;
+}
 
-  .name,
-  .age,
-  .gender,
-  .major,
-  .mbti,
-  .insta_id,
-  .one_liner,
-  .it_gender {
-    font-family: 'Pretendard-Regular';
-    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-    font-weight: 600;
-    font-style: normal;
-    font-size: 1.5em;
-    line-height: normal;
-
-  }
-
-  .name_ct input,
-  .name_ct select {
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
-    height: 8vh;
-    background-color: #1C1B1A;
-    border-radius: 12px;
-    border: 1px solid #FFF;
-    border-color: #FFFFFF;
-    text-align: center;
-    color: #FFFFFF;
-
-
-.it_men, .it_women, .it_none, .gender_man, .gender_woman {
-  color: #FFF;
+.name,
+.age,
+.gender,
+.major,
+.mbti,
+.insta_id,
+.one_liner,
+.it_gender {
   font-family: 'Pretendard-Regular';
   src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-font-size: 2em;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.5em;
+  line-height: normal;
+
 }
+
+.name_ct input,
+.name_ct select {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  height: 8vh;
+  background-color: #1C1B1A;
+  border-radius: 12px;
+  border: 1px solid #FFF;
+  border-color: #FFFFFF;
+  text-align: center;
+  color: #FFFFFF;
+
+
+  .it_men,
+  .it_women,
+  .it_none,
+  .gender_man,
+  .gender_woman {
+    color: #FFF;
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-size: 2em;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
 
 
   .gender_man,
@@ -1473,11 +1542,11 @@ line-height: normal;
     font-family: 'Pretendard-Regular';
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
 
-  font-size: 2em;
-  font-style: normal;
-  font-weight: 500;
-  color:#BBBBBB;
-  line-height: normal;
+    font-size: 2em;
+    font-style: normal;
+    font-weight: 500;
+    color: #BBBBBB;
+    line-height: normal;
 
   }
 
@@ -1517,10 +1586,10 @@ line-height: normal;
     font-family: 'Pretendard-Regular';
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
 
-  font-size: 2.5em;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
+    font-size: 2.5em;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 
   }
 
@@ -1529,22 +1598,23 @@ line-height: normal;
     font-family: 'Pretendard-Regular';
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
 
-  font-size: 1.8em;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  text-decoration-line: underline;
-  text-decoration-style: solid;
-  text-decoration-skip-ink: auto;
-  text-decoration-thickness: auto;
-  text-underline-offset: auto;
-  text-underline-position: from-font;
+    font-size: 1.8em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
 
   }
 
   .ip_agree[type="checkbox"] {
 
-    appearance: none; /* 브라우저 기본 스타일 제거 */
+    appearance: none;
+    /* 브라우저 기본 스타일 제거 */
     width: 3em;
     height: 3em;
 
@@ -1561,10 +1631,11 @@ line-height: normal;
     font-family: 'Pretendard-Regular';
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
 
-  font-size: 2em;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 52px; /* 216.667% */
+    font-size: 2em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 52px;
+    /* 216.667% */
 
   }
 
@@ -1574,32 +1645,41 @@ line-height: normal;
   .ip_liner::placeholder {
     color: #BBBBBB;
   }
-  .cont { 
+
+  .cont {
     font-family: 'Pretendard-Regular';
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
     font-weight: 700;
     font-style: normal;
-    font-size : 2.5em;
+    font-size: 2.5em;
     margin-top: 0.2em;
-    margin-left : 0.2em;
+    margin-left: 0.2em;
   }
 
   .pf_ct {
-    width : 100%;
-    height : 50vh;
-    margin-left : 0.2em;
-    margin-top : 2em;
+    width: 100%;
+    height: 50vh;
+    margin-left: 0.2em;
+    margin-top: 2em;
   }
-  .first, .second, .third, .quad {
+
+  .first,
+  .second,
+  .third,
+  .quad {
     font-family: 'Pretendard-Regular';
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
     font-weight: 500;
     font-style: normal;
-    font-size : 1.5em;
+    font-size: 1.5em;
     font-weight: bold;
   }
 
-  .first_content, .second_content, .third_content, .quad_f_content, .quad_s_content {
+  .first_content,
+  .second_content,
+  .third_content,
+  .quad_f_content,
+  .quad_s_content {
     font-family: 'Pretendard-Regular';
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
     font-weight: 400;
@@ -1610,32 +1690,40 @@ line-height: normal;
 }
 
 @media all and (min-width:0px) and (max-width:800px) {
-  .cont { 
+  .cont {
     font-family: 'Pretendard-Regular';
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
     font-weight: 700;
     font-style: normal;
-    font-size : 1.5em;
+    font-size: 1.5em;
     margin-top: 0.2em;
-    margin-left : 0.2em;
+    margin-left: 0.2em;
   }
 
   .pf_ct {
-    width : 100%;
-    height : 60vh;
-    margin-left : 0.2em;
-    margin-top : 2em;
+    width: 100%;
+    height: 60vh;
+    margin-left: 0.2em;
+    margin-top: 2em;
   }
-  .first, .second, .third, .quad {
+
+  .first,
+  .second,
+  .third,
+  .quad {
     font-family: 'Pretendard-Regular';
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
     font-weight: 500;
     font-style: normal;
-    font-size : 1em;
+    font-size: 1em;
     font-weight: bold;
   }
 
-  .first_content, .second_content, .third_content, .quad_f_content, .quad_s_content {
+  .first_content,
+  .second_content,
+  .third_content,
+  .quad_f_content,
+  .quad_s_content {
     font-family: 'Pretendard-Regular';
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
     font-weight: 400;
@@ -1649,11 +1737,12 @@ line-height: normal;
     padding: 20px;
     border-radius: 10px;
     width: 50%;
-    max-height : 100vh;  
-    max-height : 760px;
+    max-height: 100vh;
+    max-height: 760px;
     text-align: left;
     position: relative;
   }
+
   .modal {
     display: none;
     position: fixed;

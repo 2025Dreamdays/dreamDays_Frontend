@@ -154,6 +154,7 @@ table {
 .main {
     box-sizing: border-box;
     width: 100vw;
+    overflow-y: auto;
     height: 100vh;
     background-color: #FF7710;
     display: flex;
@@ -171,6 +172,7 @@ table {
 }
 
 .helloFriends {
+
     width: 312px;
     height: 24px;
 
@@ -253,10 +255,30 @@ button {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+
 }
 
+@media all and (max-height:900px) {
+    .orange {
+        padding-top: 150px;
+        padding-bottom: 50px;
+    }
+
+    .helloFriends {
+        margin-top: 100px;
+    }
+
+    .button {
+        margin-bottom: 100px;
+    }
+}
 
 @media all and (max-width:479px) {
+    .orange {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
 
     .column {
         margin-bottom: 15px;
@@ -284,6 +306,7 @@ button {
         height: 40px;
         border-radius: 18px;
         font-size: 15px;
+        margin-bottom: 0;
     }
 
     form {
@@ -312,6 +335,11 @@ button {
 }
 
 @media all and (min-width:480px) and (max-width:1024px) {
+    .orange {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
     .main {
         margin: 0;
         width: 100%;
@@ -334,7 +362,7 @@ button {
         height: 60px;
         border-radius: 18px;
         font-size: 25px;
-
+        margin-bottom: 0;
     }
 
     .labelStyle {
