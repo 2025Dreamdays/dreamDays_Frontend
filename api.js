@@ -1,5 +1,4 @@
 document.getElementById("suss").addEventListener("click", async function () {
-
     const data = {
         name: document.getElementById("ip_name").value,
         age: document.getElementById("ip_age").value,
@@ -12,10 +11,8 @@ document.getElementById("suss").addEventListener("click", async function () {
     };
 
     try {
-        axios.post("/api/users/create-info", data)
-        .then(response => console.log("백엔드 응답:", response.data))
-        .catch(error => console.error("요청 오류:", error));
-            
+        const response = await axios.post("/api/users/create-info", data); // ✅ await 추가
+
         if (response.status === 200) {
             alert("백엔드 연동 성공! 서버에서 응답 받음 ✅");
             console.log("서버 응답:", response.data);
