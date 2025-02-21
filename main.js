@@ -30,7 +30,7 @@ registerInfo.addEventListener('click', clickRegister);
 //사전등록 확인 버튼 비활성화 코드
 let now = new Date();
 
-let dreamD = new Date("2025-02-19");
+let dreamD = new Date("2025-02-21");
 
 console.log(now < dreamD);
 if (now < dreamD) {

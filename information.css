@@ -154,8 +154,9 @@
 }
 
 
-#ip_name, #ip_age {
-font-family: 'Pretendard-Regular';
+#ip_name,
+#ip_age {
+  font-family: 'Pretendard-Regular';
   src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
   font-size: 28px;
   font-style: normal;
@@ -173,7 +174,8 @@ font-family: 'Pretendard-Regular';
   line-height: normal;
 }
 
-.ip_id, .ip_liner {
+.ip_id,
+.ip_liner {
   color: #BBBBBB;
   font-family: 'Pretendard-Regular';
   src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
@@ -194,7 +196,14 @@ font-family: 'Pretendard-Regular';
   line-height: normal;
 }
 
-.name, .age, .gender, .major, .mbti, .insta_id, .one_liner, .it_gender {
+.name,
+.age,
+.gender,
+.major,
+.mbti,
+.insta_id,
+.one_liner,
+.it_gender {
   font-family: 'Pretendard-Regular';
   src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
   font-weight: 600;
@@ -325,14 +334,18 @@ font-family: 'Pretendard-Regular';
 }
 
 
-.it_men_ct, .it_women_ct, .it_none_ct {
-  display : flex;
+.it_men_ct,
+.it_women_ct,
+.it_none_ct {
+  display: flex;
 
   flex-direction: row;
   gap: 30px;
 }
 
-.it_men, .it_women, .it_none {
+.it_men,
+.it_women,
+.it_none {
 
   color: #FFF;
   font-family: 'Pretendard-Regular';
@@ -465,9 +478,12 @@ font-family: 'Pretendard-Regular';
 .ip_ct input[type="checkbox"]:checked,
 .ip_agree[type="checkbox"]:checked {
 
-  background-image: url('img/checkbox_img.svg'); /* 체크된 상태의 SVG */
-  border-color: transparent; /* 경계선을 없애기 */
-  background-color: transparent; /* 배경 투명 */
+  background-image: url('img/checkbox_img.svg');
+  /* 체크된 상태의 SVG */
+  border-color: transparent;
+  /* 경계선을 없애기 */
+  background-color: transparent;
+  /* 배경 투명 */
 }
 
 /* 모달 스타일 */
@@ -490,9 +506,11 @@ font-family: 'Pretendard-Regular';
   padding: 20px;
   border-radius: 10px;
   width: 50%;
+
   height : 50vh;  
   max-height : 760px;
   text-align: left;
+
   position: relative;
 }
 
@@ -509,138 +527,139 @@ font-family: 'Pretendard-Regular';
   body {
     margin: 0px;
   }
+
   .main {
-    margin : 0px;
-    height: 100vh ;
-    width:100%;
+    margin: 0px;
+    height: 100vh;
+    width: 100%;
     position: relative;
     justify-items: center;
   }
+
   .hf {
-    color : white;
+    color: white;
     /* text-align: center; */
     padding-top: 15%;
-}
+  }
 
-.hf img {
-  width : 50%;
-  height: 10px;
-}
+  .hf img {
+    width: 50%;
+    height: 10px;
+  }
 
-.if_reg {
+  .if_reg {
     color: white;
     text-align: center;
     padding-top: 2%;
-}
+  }
 
-.if_reg img {
-  width : 80%;
-  height: 17px;
-}
+  .if_reg img {
+    width: 80%;
+    height: 17px;
+  }
 
-.if_bt {
-  margin-top: 20%;
-  width : 100%;
-  height : 10vh;
-  border-radius: 18px;
-  background: #FFF;
-}
+  .if_bt {
+    margin-top: 20%;
+    width: 100%;
+    height: 10vh;
+    border-radius: 18px;
+    background: #FFF;
+  }
 
-.if_bt img {
-  width : 50%;
-}
+  .if_bt img {
+    width: 50%;
+  }
 
-.ip_form {
-  display: flex;
-  flex-direction: column;
-  justify-self: center;
-  margin-top: 10%;
-  gap:10px;
-  width:80%;
-  color:white;
-}
+  .ip_form {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    margin-top: 10%;
+    gap: 10px;
+    width: 80%;
+    color: white;
+  }
+
   .form_ct {
     justify-self: center;
-    color : white;
-}
-.name_ct {
-  display : flex;
-  flex-direction: column;
-  gap : 30px;
+    color: white;
+  }
 
-}
-.name, .age, .gender, .major, .mbti, .insta_id, .one_liner, .it_gender {
-  font-family: 'Pretendard-Regular';
-  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-  font-weight: 600;
-  font-style: normal;
-  font-size:100%;
-  line-height: normal;
+  .name_ct {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 
-}
-.name_ct input, .name_ct select {
-  width : 100%;
-  margin : 0px;
-  padding : 0px;
-  height: 5vh;
-  background-color: #1C1B1A;
-  border-radius: 12px;
-border: 1px solid #FFF;
-  border-color: #FFFFFF;
-  text-align: center;
-  color : #BBBBBB;
+  }
 
-}
+  .name,
+  .age,
+  .gender,
+  .major,
+  .mbti,
+  .insta_id,
+  .one_liner,
+  .it_gender {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-size: 100%;
+    line-height: normal;
 
-.gender_man, .gender_woman {
-  color: #FFF;
-  font-family: 'Pretendard-Regular';
-  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-font-size: 0.7em;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-}
+  }
 
+  .name_ct input,
+  .name_ct select {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    height: 5vh;
+    background-color: #1C1B1A;
+    border-radius: 12px;
+    border: 1px solid #FFF;
+    border-color: #FFFFFF;
+    text-align: center;
+    color: #BBBBBB;
 
-.ip_ct input[type="checkbox"] {
-  appearance: none; /* 브라우저 기본 스타일 제거 */
-  width: 36px;
-height: 36px;
-flex-shrink: 0;
-border-radius: 5px;
-border: 1px solid #FFF;
-background-color: #1C1B1A; /* 체크박스 배경색 */
-}
-.it_men_ct, .it_women_ct, .it_none_ct, .women_ct, .man_ct {
-  display : flex;
-  flex-direction: row;
-  align-items: center;
-  gap :30px;
-}
+  }
 
-.it_men, .it_women, .it_none, .gender_man, .gender_woman {
-  color: #FFF;
-  font-family: 'Pretendard-Regular';
-  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-font-size: 1.0em;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-}
+  .gender_man,
+  .gender_woman {
+    color: #FFF;
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-size: 0.7em;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
 
 #ip_name, #ip_age, .ip_id, .ip_liner, #dp_mbti, #dp_major {
   font-family: 'Pretendard-Regular';
+
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-  font-size: 1.2em;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
+    font-size: 1.0em;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  #ip_name,
+  #ip_age,
+  .ip_id,
+  .ip_liner {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-size: 1.2em;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
   }
 
   .bottom {
     justify-self: center;
-    width : 80%;
+    width: 80%;
     margin-top: 5%;
   }
 
@@ -657,51 +676,54 @@ line-height: normal;
     font-weight: 400;
     line-height: normal;
     color: #000;
-    margin-top : 10%;
+    margin-top: 10%;
     margin-bottom: 20%;
   }
 
   .agree_all_ct {
-    display : flex;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap : 20px;
+    gap: 20px;
   }
 
   .agree {
     color: #FFF;
     font-family: 'Pretendard-Regular';
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-  font-size: 1em;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
   }
-  
+
   .add {
     color: #FFF;
     font-family: 'Pretendard-Regular';
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-  font-size: 0.7em;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  text-decoration-line: underline;
-  text-decoration-style: solid;
-  text-decoration-skip-ink: auto;
-  text-decoration-thickness: auto;
-  text-underline-offset: auto;
-  text-underline-position: from-font;
+    font-size: 0.7em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
   }
+
   .ip_agree[type="checkbox"] {
-    appearance: none; /* 브라우저 기본 스타일 제거 */
+    appearance: none;
+    /* 브라우저 기본 스타일 제거 */
     width: 1.5em;
     height: 1.5em;
     flex-shrink: 0;
     border-radius: 5px;
     border: 1px solid #FFF;
-  background-color: #1C1B1A; /* 체크박스 배경색 */
+    background-color: #1C1B1A;
+    /* 체크박스 배경색 */
   }
 
   .semi_if {
@@ -709,10 +731,11 @@ line-height: normal;
     color: #FFF;
     font-family: 'Pretendard-Regular';
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-  font-size: 1em;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 52px; /* 216.667% */
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 52px;
+    /* 216.667% */
   }
   #ip_age::placeholder, #ip_name::placeholder, .ip_id::placeholder, .ip_liner::placeholder{
     color:#BBBBBB;
@@ -757,66 +780,68 @@ line-height: normal;
   body {
     margin: 0px;
   }
+
   .main {
-    margin : 0px;
-    height: 100vh ;
-    width:100%;
+    margin: 0px;
+    height: 100vh;
+    width: 100%;
     position: relative;
     justify-items: center;
   }
+
   .hf {
-    color : white;
+    color: white;
     /* text-align: center; */
     padding-top: 15%;
-}
+  }
 
-.hf img {
-  width : 50%;
-  height: 10px;
-}
+  .hf img {
+    width: 50%;
+    height: 10px;
+  }
 
-.if_reg {
+  .if_reg {
     color: white;
     text-align: center;
     padding-top: 2%;
-}
+  }
 
-.if_reg img {
-  width : 80%;
-  height: 17px;
-}
+  .if_reg img {
+    width: 80%;
+    height: 17px;
+  }
 
-.if_bt {
-  margin-top: 20%;
-  width : 200%;
-  height : 10vh;
-  border-radius: 18px;
-  background: #FFF;
-}
+  .if_bt {
+    margin-top: 20%;
+    width: 200%;
+    height: 10vh;
+    border-radius: 18px;
+    background: #FFF;
+  }
 
-.middle {
-  width : 60%;
-}
-.if_bt img {
-  width : 50%;
-}
-.ip_form {
-  display: flex;
-  flex-direction: column;
-  justify-self: center;
-  margin-top: 10%;
-  gap:10px;
-  width:80%;
-  color:white;
-}
+  .middle {
+    width: 60%;
+  }
+
+  .if_bt img {
+    width: 50%;
+  }
+
+  .ip_form {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    margin-top: 10%;
+    gap: 10px;
+    width: 80%;
+    color: white;
+  }
+
   .form_ct {
     justify-self: center;
-    color : white;
-}
-.name_ct {
-  display : flex;
-  flex-direction: column;
-  gap : 30px;
+    color: white;
+  }
+
 
 }
 .form_all_ct {
@@ -830,47 +855,42 @@ line-height: normal;
   font-size:2em;
   line-height: normal;
 
-}
-.name_ct input, .name_ct select {
-  width : 100%;
-  margin : 0px;
-  padding : 0px;
-  height: 8vh;
-  background-color: #1C1B1A;
-  border-radius: 12px;
-border: 1px solid #FFF;
-  border-color: #FFFFFF;
-  text-align: center;
-  color : #FFFFFF;
+  }
 
-}
+  .form_all_ct {
+    gap: 30px;
+  }
 
-.gender_man, .gender_woman {
-  color: #FFF;
-  font-family: 'Pretendard-Regular';
-  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-font-size: 0.7em;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-}
+  .name,
+  .age,
+  .gender,
+  .major,
+  .mbti,
+  .insta_id,
+  .one_liner,
+  .it_gender {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.5em;
+    line-height: normal;
 
+  }
 
-.ip_ct input[type="checkbox"] {
-  appearance: none; /* 브라우저 기본 스타일 제거 */
-  width: 36px;
-height: 36px;
-flex-shrink: 0;
-border-radius: 5px;
-border: 1px solid #FFF;
-background-color: #1C1B1A; /* 체크박스 배경색 */
-}
-.it_men_ct, .it_women_ct, .it_none_ct, .women_ct, .man_ct {
-  display : flex;
-  flex-direction: row;
-  align-items: center;
-  gap :30px;
-}
+  .name_ct input,
+  .name_ct select {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    height: 8vh;
+    background-color: #1C1B1A;
+    border-radius: 12px;
+    border: 1px solid #FFF;
+    border-color: #FFFFFF;
+    text-align: center;
+    color: #FFFFFF;
+
 
 .it_men, .it_women, .it_none, .gender_man, .gender_woman {
   color: #FFF;
@@ -882,28 +902,29 @@ font-weight: 500;
 line-height: normal;
 }
 
-#ip_name, #ip_age, .ip_id, .ip_liner, #dp_mbti, #dp_major {
-  font-family: 'Pretendard-Regular';
+
+  .gender_man,
+  .gender_woman {
+    color: #FFF;
+    font-family: 'Pretendard-Regular';
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+
   font-size: 1.7em;
   font-style: normal;
   font-weight: 500;
   color:#BBBBBB;
   line-height: normal;
+
   }
 
-  .bottom {
-    justify-self: center;
-    width : 80%;
-    margin-top: 5%;
-  }
 
-  .sus {
-    font-family: 'ONE-Mobile-Title';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-Title.woff') format('woff');
-    width: 80%;
-    height: 10vh;
+  .ip_ct input[type="checkbox"] {
+    appearance: none;
+    /* 브라우저 기본 스타일 제거 */
+    width: 36px;
+    height: 36px;
     flex-shrink: 0;
+
     border-radius: 18px;
     background: #FFF;
     font-size: 2.5em;
@@ -913,30 +934,59 @@ line-height: normal;
     color: #000;
     margin-top : 10%;
     margin-bottom: 20%;
+
+  }
+
+  .it_men_ct,
+  .it_women_ct,
+  .it_none_ct,
+  .women_ct,
+  .man_ct {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .it_men,
+  .it_women,
+  .it_none,
+  .gender_man,
+  .gender_woman {
+    color: #FFF;
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+
+  font-size: 2em;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+
   }
 
   .agree_all_ct {
-    display : flex;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap : 20px;
+    gap: 20px;
   }
 
   .agree {
     color: #FFF;
     font-family: 'Pretendard-Regular';
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-  font-size: 2em;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
+    font-size: 1.5em;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
   }
-  
+
   .add {
     color: #FFF;
     font-family: 'Pretendard-Regular';
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+
   font-size: 1.5em;
   font-style: normal;
   font-weight: 400;
@@ -947,15 +997,20 @@ line-height: normal;
   text-decoration-thickness: auto;
   text-underline-offset: auto;
   text-underline-position: from-font;
+
   }
+
   .ip_agree[type="checkbox"] {
+
     appearance: none; /* 브라우저 기본 스타일 제거 */
     width: 3em;
     height: 3em;
+
     flex-shrink: 0;
     border-radius: 5px;
     border: 1px solid #FFF;
-  background-color: #1C1B1A; /* 체크박스 배경색 */
+    background-color: #1C1B1A;
+    /* 체크박스 배경색 */
   }
 
   .semi_if {
@@ -963,13 +1018,19 @@ line-height: normal;
     color: #FFF;
     font-family: 'Pretendard-Regular';
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+
   font-size: 1.7em;
   font-style: normal;
   font-weight: 400;
   line-height: 52px; /* 216.667% */
+
   }
-  #ip_age::placeholder, #ip_name::placeholder, .ip_id::placeholder, .ip_liner::placeholder{
-    color:#BBBBBB;
+
+  #ip_age::placeholder,
+  #ip_name::placeholder,
+  .ip_id::placeholder,
+  .ip_liner::placeholder {
+    color: #BBBBBB;
   }
   .cont { 
     font-family: 'Pretendard-Regular';
@@ -1012,66 +1073,67 @@ line-height: normal;
   }
 
   .main {
-    margin : 0px;
-    height: 100vh ;
-    width:100%;
+    margin: 0px;
+    height: 100vh;
+    width: 100%;
     position: relative;
     justify-items: center;
     /* margin: 5% 5%; */
   }
+
   .hf {
-    color : white;
+    color: white;
     /* text-align: center; */
     padding-top: 15%;
-}
+  }
 
-.hf img {
-  width : 50%;
-  height: 10px;
-}
+  .hf img {
+    width: 50%;
+    height: 10px;
+  }
 
-.if_reg {
+  .if_reg {
     color: white;
     text-align: center;
     padding-top: 2%;
-}
+  }
 
-.if_reg img {
-  width : 80%;
-  height: 17px;
-}
+  .if_reg img {
+    width: 80%;
+    height: 17px;
+  }
 
-.if_bt {
-  margin-top: 20%;
-  width : 200%;
-  height : 10vh;
-  border-radius: 18px;
-  background: #FFF;
-}
+  .if_bt {
+    margin-top: 20%;
+    width: 200%;
+    height: 10vh;
+    border-radius: 18px;
+    background: #FFF;
+  }
 
-.middle {
-  width : 60%;
-}
-.if_bt img {
-  width : 50%;
-}
-.ip_form {
-  display: flex;
-  flex-direction: column;
-  justify-self: center;
-  margin-top: 10%;
-  gap:10px;
-  width:80%;
-  color:white;
-}
+  .middle {
+    width: 60%;
+  }
+
+  .if_bt img {
+    width: 50%;
+  }
+
+  .ip_form {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    margin-top: 10%;
+    gap: 10px;
+    width: 80%;
+    color: white;
+  }
+
   .form_ct {
     justify-self: center;
-    color : white;
-}
-.name_ct {
-  display : flex;
-  flex-direction: column;
-  gap : 30px;
+    color: white;
+  }
+
 
 }
 .form_all_ct {
@@ -1085,47 +1147,43 @@ line-height: normal;
   font-size:2.5em;
   line-height: normal;
 
-}
-.name_ct input, .name_ct select {
-  width : 100%;
-  margin : 0px;
-  padding : 0px;
-  height: 8vh;
-  background-color: #1C1B1A;
-  border-radius: 12px;
-border: 1px solid #FFF;
-  border-color: #FFFFFF;
-  text-align: center;
-  color : #FFFFFF;
 
-}
+  }
 
-.gender_man, .gender_woman {
-  color: #FFF;
-  font-family: 'Pretendard-Regular';
-  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-font-size: 0.7em;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-}
+  .form_all_ct {
+    gap: 30px;
+  }
 
+  .name,
+  .age,
+  .gender,
+  .major,
+  .mbti,
+  .insta_id,
+  .one_liner,
+  .it_gender {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.5em;
+    line-height: normal;
 
-.ip_ct input[type="checkbox"] {
-  appearance: none; /* 브라우저 기본 스타일 제거 */
-  width: 36px;
-height: 36px;
-flex-shrink: 0;
-border-radius: 5px;
-border: 1px solid #FFF;
-background-color: #1C1B1A; /* 체크박스 배경색 */
-}
-.it_men_ct, .it_women_ct, .it_none_ct, .women_ct, .man_ct {
-  display : flex;
-  flex-direction: row;
-  align-items: center;
-  gap :30px;
-}
+  }
+
+  .name_ct input,
+  .name_ct select {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    height: 8vh;
+    background-color: #1C1B1A;
+    border-radius: 12px;
+    border: 1px solid #FFF;
+    border-color: #FFFFFF;
+    text-align: center;
+    color: #FFFFFF;
+
 
 .it_men, .it_women, .it_none, .gender_man, .gender_woman {
   color: #FFF;
@@ -1137,19 +1195,24 @@ font-weight: 500;
 line-height: normal;
 }
 
-#ip_name, #ip_age, .ip_id, .ip_liner, #dp_mbti, #dp_major {
-  font-family: 'Pretendard-Regular';
+
+  .gender_man,
+  .gender_woman {
+    color: #FFF;
+    font-family: 'Pretendard-Regular';
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+
   font-size: 2em;
   font-style: normal;
   font-weight: 500;
   color:#BBBBBB;
   line-height: normal;
+
   }
 
   .bottom {
     justify-self: center;
-    width : 80%;
+    width: 80%;
     margin-top: 5%;
   }
 
@@ -1166,32 +1229,35 @@ line-height: normal;
     font-weight: 400;
     line-height: normal;
     color: #000;
-    margin-top : 10%;
+    margin-top: 10%;
     margin-bottom: 20%;
   }
 
   .agree_all_ct {
-    display : flex;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap : 20px;
+    gap: 20px;
   }
 
   .agree {
     color: #FFF;
     font-family: 'Pretendard-Regular';
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+
   font-size: 2.5em;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+
   }
-  
+
   .add {
     color: #FFF;
     font-family: 'Pretendard-Regular';
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+
   font-size: 1.8em;
   font-style: normal;
   font-weight: 400;
@@ -1202,15 +1268,20 @@ line-height: normal;
   text-decoration-thickness: auto;
   text-underline-offset: auto;
   text-underline-position: from-font;
+
   }
+
   .ip_agree[type="checkbox"] {
+
     appearance: none; /* 브라우저 기본 스타일 제거 */
     width: 3.5em;
     height: 3.5em;
+
     flex-shrink: 0;
     border-radius: 5px;
     border: 1px solid #FFF;
-  background-color: #1C1B1A; /* 체크박스 배경색 */
+    background-color: #1C1B1A;
+    /* 체크박스 배경색 */
   }
 
   .semi_if {
@@ -1218,13 +1289,19 @@ line-height: normal;
     color: #FFF;
     font-family: 'Pretendard-Regular';
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+
   font-size: 2em;
   font-style: normal;
   font-weight: 400;
   line-height: 52px; /* 216.667% */
+
   }
-  #ip_age::placeholder, #ip_name::placeholder, .ip_id::placeholder, .ip_liner::placeholder{
-    color:#BBBBBB;
+
+  #ip_age::placeholder,
+  #ip_name::placeholder,
+  .ip_id::placeholder,
+  .ip_liner::placeholder {
+    color: #BBBBBB;
   }
   .cont { 
     font-family: 'Pretendard-Regular';
@@ -1265,67 +1342,69 @@ line-height: normal;
   body {
     margin: 0px;
   }
+
   .main {
-    margin : 0px;
-    height: 100vh ;
-    width:100%;
+    margin: 0px;
+    height: 100vh;
+    width: 100%;
     position: relative;
     justify-items: center;
     /* margin: 5% 5%; */
   }
+
   .hf {
-    color : white;
+    color: white;
     /* text-align: center; */
     padding-top: 15%;
-}
+  }
 
-.hf img {
-  width : 50%;
-  height: 10px;
-}
+  .hf img {
+    width: 50%;
+    height: 10px;
+  }
 
-.if_reg {
+  .if_reg {
     color: white;
     text-align: center;
     padding-top: 2%;
-}
+  }
 
-.if_reg img {
-  width : 80%;
-  height: 17px;
-}
+  .if_reg img {
+    width: 80%;
+    height: 17px;
+  }
 
-.if_bt {
-  margin-top: 20%;
-  width : 200%;
-  height : 10vh;
-  border-radius: 18px;
-  background: #FFF;
-}
+  .if_bt {
+    margin-top: 20%;
+    width: 200%;
+    height: 10vh;
+    border-radius: 18px;
+    background: #FFF;
+  }
 
-.middle {
-  width : 60%;
-}
-.if_bt img {
-  width : 50%;
-}
-.ip_form {
-  display: flex;
-  flex-direction: column;
-  justify-self: center;
-  margin-top: 10%;
-  gap:10px;
-  width:80%;
-  color:white;
-}
+  .middle {
+    width: 60%;
+  }
+
+  .if_bt img {
+    width: 50%;
+  }
+
+  .ip_form {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    margin-top: 10%;
+    gap: 10px;
+    width: 80%;
+    color: white;
+  }
+
   .form_ct {
     justify-self: center;
-    color : white;
-}
-.name_ct {
-  display : flex;
-  flex-direction: column;
-  gap : 30px;
+    color: white;
+  }
+
 
 }
 .form_all_ct {
@@ -1339,47 +1418,43 @@ line-height: normal;
   font-size:2.5em;
   line-height: normal;
 
-}
-.name_ct input, .name_ct select {
-  width : 100%;
-  margin : 0px;
-  padding : 0px;
-  height: 8vh;
-  background-color: #1C1B1A;
-  border-radius: 12px;
-border: 1px solid #FFF;
-  border-color: #FFFFFF;
-  text-align: center;
-  color : #FFFFFF;
 
-}
+  }
 
-.gender_man, .gender_woman {
-  color: #FFF;
-  font-family: 'Pretendard-Regular';
-  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-font-size: 0.7em;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-}
+  .form_all_ct {
+    gap: 30px;
+  }
 
+  .name,
+  .age,
+  .gender,
+  .major,
+  .mbti,
+  .insta_id,
+  .one_liner,
+  .it_gender {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.5em;
+    line-height: normal;
 
-.ip_ct input[type="checkbox"] {
-  appearance: none; /* 브라우저 기본 스타일 제거 */
-  width: 36px;
-height: 36px;
-flex-shrink: 0;
-border-radius: 5px;
-border: 1px solid #FFF;
-background-color: #1C1B1A; /* 체크박스 배경색 */
-}
-.it_men_ct, .it_women_ct, .it_none_ct, .women_ct, .man_ct {
-  display : flex;
-  flex-direction: row;
-  align-items: center;
-  gap :30px;
-}
+  }
+
+  .name_ct input,
+  .name_ct select {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    height: 8vh;
+    background-color: #1C1B1A;
+    border-radius: 12px;
+    border: 1px solid #FFF;
+    border-color: #FFFFFF;
+    text-align: center;
+    color: #FFFFFF;
+
 
 .it_men, .it_women, .it_none, .gender_man, .gender_woman {
   color: #FFF;
@@ -1391,19 +1466,24 @@ font-weight: 500;
 line-height: normal;
 }
 
-#ip_name, #ip_age, .ip_id, .ip_liner, #dp_mbti, #dp_major {
-  font-family: 'Pretendard-Regular';
+
+  .gender_man,
+  .gender_woman {
+    color: #FFF;
+    font-family: 'Pretendard-Regular';
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+
   font-size: 2em;
   font-style: normal;
   font-weight: 500;
   color:#BBBBBB;
   line-height: normal;
+
   }
 
   .bottom {
     justify-self: center;
-    width : 80%;
+    width: 80%;
     margin-top: 5%;
   }
 
@@ -1420,32 +1500,35 @@ line-height: normal;
     font-weight: 400;
     line-height: normal;
     color: #000;
-    margin-top : 10%;
+    margin-top: 10%;
     margin-bottom: 20%;
   }
 
   .agree_all_ct {
-    display : flex;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap : 20px;
+    gap: 20px;
   }
 
   .agree {
     color: #FFF;
     font-family: 'Pretendard-Regular';
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+
   font-size: 2.5em;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+
   }
-  
+
   .add {
     color: #FFF;
     font-family: 'Pretendard-Regular';
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+
   font-size: 1.8em;
   font-style: normal;
   font-weight: 400;
@@ -1456,15 +1539,20 @@ line-height: normal;
   text-decoration-thickness: auto;
   text-underline-offset: auto;
   text-underline-position: from-font;
+
   }
+
   .ip_agree[type="checkbox"] {
+
     appearance: none; /* 브라우저 기본 스타일 제거 */
     width: 3em;
     height: 3em;
+
     flex-shrink: 0;
     border-radius: 5px;
     border: 1px solid #FFF;
-  background-color: #1C1B1A; /* 체크박스 배경색 */
+    background-color: #1C1B1A;
+    /* 체크박스 배경색 */
   }
 
   .semi_if {
@@ -1472,13 +1560,19 @@ line-height: normal;
     color: #FFF;
     font-family: 'Pretendard-Regular';
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+
   font-size: 2em;
   font-style: normal;
   font-weight: 400;
   line-height: 52px; /* 216.667% */
+
   }
-  #ip_age::placeholder, #ip_name::placeholder, .ip_id::placeholder, .ip_liner::placeholder{
-    color:#BBBBBB;
+
+  #ip_age::placeholder,
+  #ip_name::placeholder,
+  .ip_id::placeholder,
+  .ip_liner::placeholder {
+    color: #BBBBBB;
   }
   .cont { 
     font-family: 'Pretendard-Regular';
