@@ -8,14 +8,10 @@ document.getElementById("suss").addEventListener("click", async function () {
         mbti: document.getElementById("dp_mbti").value,
         selectGender: [...document.querySelectorAll(".ip_it_gender:checked")].map(gender => gender.nextElementSibling.textContent),
         bio: document.querySelector(".ip_liner").value,
-            };
+    };
 
     try {
-        axios.defaults.baseURL = 'http://3.39.44.144:8080'; // 기본 URL 설정
-
-const response = await axios.post("/api/users/create-info", data);
-
-
+        const response = await axios.post("https://your-site.netlify.app/api/users/create-info", data);  // HTTPS로 요청
 
         if (response.status === 200) {
             alert("백엔드 연동 성공! 서버에서 응답 받음 ✅");
