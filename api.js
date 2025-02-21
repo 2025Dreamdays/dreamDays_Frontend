@@ -1,6 +1,7 @@
 document.getElementById("suss").addEventListener("click", async function () {
     const data = {
         name: document.getElementById("ip_name").value,
+        studentNumber : document.querySelector(".ip_st").value,
         instagramId: document.querySelector(".ip_id").value,
         age: document.getElementById("ip_age").value,
         gender: document.getElementById("men_ck").checked ? "남성" : document.getElementById("women_ck").checked ? "여성" : "",
