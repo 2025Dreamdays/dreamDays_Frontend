@@ -11,7 +11,7 @@ document.getElementById("suss").addEventListener("click", async function () {
     };
 
     try {
-        const response = await axios.post("https://your-site.netlify.app/api/users/create-info", data);  // HTTPS로 요청
+        const response = await axios.post("https://eulji-hf.netlify.app/api/users/create-info", data);  // HTTPS로 요청
 
         if (response.status === 200) {
             alert("백엔드 연동 성공! 서버에서 응답 받음 ✅");
