@@ -27,16 +27,6 @@ checkInfo.addEventListener('click', clickCheck);
 registerInfo.addEventListener('click', clickRegister);
 
 
-//사전등록 확인 버튼 비활성화 코드
-let now = new Date();
-
-let dreamD = new Date("2025-02-21");
-
-console.log(now < dreamD);
-if (now < dreamD) {
-    checkInfo.disabled = true;
-}
-
 
 //입력한 정보 확인 페이지 이동
 const checkOrangeDisplayLink = () => {
