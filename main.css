@@ -149,8 +149,8 @@ table {
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: space-evenly;
     transition: 1s;
+    justify-content: center;
 }
 
 .black {
@@ -158,13 +158,12 @@ table {
     width: 50%;
     height: 100%;
     transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .black>div {
-    justify-items: right;
-}
-
-.black>img {
     justify-items: right;
 }
 
@@ -178,9 +177,8 @@ table {
 
 .main {
     box-sizing: border-box;
-    margin: 51px auto;
-    width: 92%;
-    height: 978px;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -190,7 +188,7 @@ table {
     position: fixed;
     width: 287px;
     height: 287px;
-    top: 400px;
+    top: 50%
 }
 
 .checkInfo {
@@ -212,7 +210,6 @@ table {
 }
 
 .hello {
-    margin-top: 87.53px;
     margin-bottom: 149.34px;
 }
 
@@ -338,7 +335,7 @@ table {
 
     .preRe {
         height: 15px;
-        margin-top: 80px;
+
         margin-bottom: 15.61px;
     }
 
