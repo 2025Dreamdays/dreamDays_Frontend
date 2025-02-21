@@ -599,7 +599,7 @@
   .mbti,
   .insta_id,
   .one_liner,
-  .it_gender {
+  .it_gender, .student {
     font-family: 'Pretendard-Regular';
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
     font-weight: 600;
@@ -640,7 +640,7 @@
   .ip_id,
   .ip_liner,
   #dp_mbti,
-  #dp_major {
+  #dp_major, .ip_st {
     font-family: 'Pretendard-Regular';
     color : #BBBBBB;
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
@@ -746,7 +746,7 @@
   #ip_age::placeholder,
   #ip_name::placeholder,
   .ip_id::placeholder,
-  .ip_liner::placeholder {
+  .ip_liner::placeholder, .ip_st::placeholder {
     color: #BBBBBB;
   }
 
@@ -875,7 +875,7 @@
 .mbti,
 .insta_id,
 .one_liner,
-.it_gender {
+.it_gender, .student {
   font-family: 'Pretendard-Regular';
   src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
   font-weight: 600;
@@ -896,7 +896,7 @@
 .mbti,
 .insta_id,
 .one_liner,
-.it_gender {
+.it_gender, .student {
   font-family: 'Pretendard-Regular';
   src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
   font-weight: 600;
@@ -985,7 +985,7 @@
   .ip_id,
   .ip_liner,
   #dp_mbti,
-  #dp_major {
+  #dp_major, .ip_st {
     font-family: 'Pretendard-Regular';
     color : #BBBBBB;
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
@@ -1078,7 +1078,7 @@
   #ip_age::placeholder,
   #ip_name::placeholder,
   .ip_id::placeholder,
-  .ip_liner::placeholder {
+  .ip_liner::placeholder, .ip_st::placeholder {
     color: #BBBBBB;
   }
 
@@ -1198,7 +1198,7 @@
 .mbti,
 .insta_id,
 .one_liner,
-.it_gender {
+.it_gender, .student {
   font-family: 'Pretendard-Regular';
   src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
   font-weight: 600;
@@ -1220,7 +1220,7 @@
 .mbti,
 .insta_id,
 .one_liner,
-.it_gender {
+.it_gender, .student {
   font-family: 'Pretendard-Regular';
   src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
   font-weight: 600;
@@ -1248,7 +1248,7 @@
 .ip_id,
 .ip_liner,
 #dp_mbti,
-#dp_major {
+#dp_major, .ip_st {
   font-family: 'Pretendard-Regular';
   color : #BBBBBB;
   src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
@@ -1378,7 +1378,7 @@
   #ip_age::placeholder,
   #ip_name::placeholder,
   .ip_id::placeholder,
-  .ip_liner::placeholder {
+  .ip_liner::placeholder, .ip_st::placeholder {
     color: #BBBBBB;
   }
 
@@ -1496,7 +1496,7 @@
 .mbti,
 .insta_id,
 .one_liner,
-.it_gender {
+.it_gender, .student {
   font-family: 'Pretendard-Regular';
   src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
   font-weight: 600;
@@ -1518,7 +1518,7 @@
 .mbti,
 .insta_id,
 .one_liner,
-.it_gender {
+.it_gender, .student {
   font-family: 'Pretendard-Regular';
   src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
   font-weight: 600;
@@ -1532,7 +1532,7 @@
 .ip_id,
 .ip_liner,
 #dp_mbti,
-#dp_major {
+#dp_major, .ip_st {
   font-family: 'Pretendard-Regular';
   color : #BBBBBB;
   src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
@@ -1677,7 +1677,7 @@
   #ip_age::placeholder,
   #ip_name::placeholder,
   .ip_id::placeholder,
-  .ip_liner::placeholder {
+  .ip_liner::placeholder, .ip_st::placeholder {
     color: #BBBBBB;
   }
 
