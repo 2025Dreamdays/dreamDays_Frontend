@@ -50,7 +50,7 @@
 
     <script>
         // API 호출해서 데이터 받아오기
-        fetch('http://3.39.44.144:8080/api/users/create-info') // GET 요청
+        fetch('http://3.39.44.144:8080/api/draw') // GET 요청
         .then(response => response.json())
         .then(data => {
             const drawnUser = data.drawResult.drawnUser;
