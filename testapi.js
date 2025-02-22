@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 return;
             }
 
-            axios.get("https://yourserver.com/api/student", {
+            axios.get("https://eulji-hf.netlify.app/api/users/check-info", {
                 params: {
                     name: name,
                     studentNumber: studentNumber
