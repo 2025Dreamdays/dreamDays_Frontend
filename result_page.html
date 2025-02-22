@@ -9,43 +9,64 @@
 </head>
 <body>
     <main class="main">
-    <section class="top">
-        <div class="hf"> 
-            <img src=img/hf.svg>
-        </div>
-        <div class="if_reg"> 
-            <img src=img/random_friends.svg>
-        </div>
-    </section>
-
-    <section class="middle">
-       <div class="result_ct"> 
-        <section class="left_title">
-            <div class="f_name"> 이름: </div>
-            <div class="f_age"> 나이: </div>
-            <div class="f_reg"> 학과: </div>
-            <div class="f_gender"> 성별: </div>
-            <div class="f_insta"> 인스타 ID: </div>
-            <div class="f_one"> 한 줄 소개: </div>
-            <div class="f_mbti"> MBTI: </div>
+        <section class="top">
+            <div class="hf"> 
+                <img src="img/hf.svg">
+            </div>
+            <div class="if_reg"> 
+                <img src="img/random_friends.svg">
+            </div>
         </section>
-        
-        <section class="right_title">
-            <div class="f_rp_name"> 신예진 </div>
-            <div class="f_rp_age"> 22 </div>
-            <div class="f_rp_reg"> 의료홍보디자인학과 </div>
-            <div class="f_rp_gender"> 남자 </div>
-            <div class="f_rp_insta"> @Pppp_000 </div>
-            <div class="f_rp_one"> 이번 기회에 친해져봐요! </div>
-            <div class="f_rp_mbti"> ENFP </div>
-        </section>
-        </div>
-    </section>
 
-    <section class="bottom">
-        <button class="mat_sus"> 친구 매칭 완료! </button>
-    </section>
-</main>
-    
+        <section class="middle">
+            <div class="result_ct"> 
+                <section class="left_title">
+                    <div class="f_name"> 이름: </div>
+                    <div class="f_age"> 나이: </div>
+                    <div class="f_reg"> 학과: </div>
+                    <div class="f_gender"> 성별: </div>
+                    <div class="f_insta"> 인스타 ID: </div>
+                    <div class="f_one"> 한 줄 소개: </div>
+                    <div class="f_mbti"> MBTI: </div>
+                </section>
+                
+                <section class="right_title">
+                    <!-- 동적으로 데이터가 들어갈 부분 -->
+                    <div class="f_rp_name" id="f_rp_name"></div>
+                    <div class="f_rp_age" id="f_rp_age"></div>
+                    <div class="f_rp_reg" id="f_rp_reg"></div>
+                    <div class="f_rp_gender" id="f_rp_gender"></div>
+                    <div class="f_rp_insta" id="f_rp_insta"></div>
+                    <div class="f_rp_one" id="f_rp_one"></div>
+                    <div class="f_rp_mbti" id="f_rp_mbti"></div>
+                </section>
+            </div>
+        </section>
+
+        <section class="bottom">
+            <button class="mat_sus"> 친구 매칭 완료! </button>
+        </section>
+    </main>
+
+    <script>
+        // API 호출해서 데이터 받아오기
+        fetch('http://3.39.44.144:8080/api/users/create-info') // GET 요청
+        .then(response => response.json())
+        .then(data => {
+            const drawnUser = data.drawResult.drawnUser;
+
+            document.getElementById('f_rp_name').textContent = drawnUser.name;
+            document.getElementById('f_rp_age').textContent = drawnUser.age;
+            document.getElementById('f_rp_reg').textContent = drawnUser.reg;
+            document.getElementById('f_rp_gender').textContent = drawnUser.gender;
+            document.getElementById('f_rp_insta').textContent = drawnUser.instagramId;
+            document.getElementById('f_rp_one').textContent = drawnUser.bio;
+            // 만약 MBTI가 있다면 추가
+            // document.getElementById('f_rp_mbti').textContent = drawnUser.mbti;
+        })
+        .catch(error => {
+            console.error('Error fetching data:', error);
+        });
+    </script>
 </body>
 </html>
