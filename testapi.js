@@ -34,11 +34,14 @@ document.addEventListener("DOMContentLoaded", function () {
     // viewInfo.html에서 실행되는 코드
     if (window.location.pathname.includes("viewInfo.html")) {
         const studentInfo = JSON.parse(localStorage.getItem("studentInfo"));
+        console.log(studentInfo);
+
         if (studentInfo) {
             document.getElementById("re_name").textContent = studentInfo.name;
             document.getElementById("re_studentNumber").textContent = studentInfo.studentNumber;
+            console.log("데이터 정상 출력됨!");
         } else {
-            alert("학생 정보를 찾을 수 없습니다.");
+            console.log("학생 정보 없음!");
             window.location.href = "index.html";
         }
     }
