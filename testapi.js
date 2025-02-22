@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     // API 호출
-    axios.get('https://eulji-hf.netlify.app/api/users/check-info"')
+    axios.get('https://eulji-hf.netlify.app/api/users/check-info')
         .then(function(response) {
             // 성공적으로 데이터를 가져온 경우
             const data = response.data;
