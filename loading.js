@@ -33,40 +33,42 @@
 
 // }, 2000)
 
-// async function drawUser() {
-//     const urlParams = new URLSearchParams(window.location.search);
-//     const studentNumber = urlParams.get('studentNumber');
-//     const name = urlParams.get('name');
-//     const requestData = {
-//         name: `${name}`,
-//         studentNumber: `${studentNumber}`
-//     };
+async function drawUser() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const studentNumber = urlParams.get('studentNumber');
+    const name = urlParams.get('name');
+// 그냥 변수명을 사용하거나, 템플릿 리터럴을 사용할 때는 백틱(`)을 사용
+    const requestData = {
+        name: name,
+        studentNumber: studentNumber
+    };
 
-//     try {
-//         const response = await fetch("https://likelion.hellofriend.cc/api/draw", {
-//             method: "POST",
-//             headers: {
-//                 "Content-Type": "application/json"
-//             },
-//             body: JSON.stringify(requestData)
-//         });
 
-//         if (!response.ok) {
-//             throw new Error(`HTTP error! Status: ${response.status}`);
-//         }
+    try {
+        const response = await fetch("https://likelion.hellofriend.cc/api/draw", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(requestData)
+        });
 
-//         const data = await response.json();
-//         console.log("뽑힌 사용자 정보:", data);
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+        }
 
-//         // 뽑힌 사용자 정보 추출
-//         const drawnUser = data;  // 백엔드에서 보내주는 사용자 정보 그대로 받기
+        const data = await response.json();
+        console.log("뽑힌 사용자 정보:", data);
 
-//         // 쿼리 파라미터로 데이터를 넘기기
-//         window.location.href = `result_page.html?name=${drawnUser.name}&age=${drawnUser.age}&instagramId=${drawnUser.instagramId}&department=${drawnUser.department}&gender=${drawnUser.gender}&mbti=${drawnUser.mbti}&bio=${drawnUser.bio}`;        
-//     } catch (error) {
-//         console.error("뽑기 실패:", error);
-//     }
-// }
+        // 뽑힌 사용자 정보 추출
+        const drawnUser = data;  // 백엔드에서 보내주는 사용자 정보 그대로 받기
+
+        // 쿼리 파라미터로 데이터를 넘기기
+        window.location.href = `result_page.html?name=${drawnUser.name}&age=${drawnUser.age}&instagramId=${drawnUser.instagramId}&department=${drawnUser.department}&gender=${drawnUser.gender}&mbti=${drawnUser.mbti}&bio=${drawnUser.bio}`;        
+    } catch (error) {
+        console.error("뽑기 실패:", error);
+    }
+}
 
 window.location.href = `result_page.html`;
 
