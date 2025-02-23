@@ -9,7 +9,7 @@ document.getElementById('suss').addEventListener('click', async function(event) 
   event.preventDefault();
 
   const data = {
-    name: document.getElementById('ip_name').value,
+    name: document.getElementById('ip_name').value, 
     studentNumber: document.querySelector('input[name="studentNumber"]').value,
     instagramId: document.querySelector('input[name="instagramId"]').value,
     age: document.getElementById('ip_age').value,
