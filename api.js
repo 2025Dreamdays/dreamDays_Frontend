@@ -14,7 +14,8 @@ document.getElementById("suss").addEventListener("click", async function () {
     };
 
     try {
-        const response = await axios.post('https://likelion.hellofriend.cc/api/users/create-info', data, { 
+        const response = await axios.post('http://likelion.hellofriend.cc/api/users/create-info', data, {
+    withCredentials: true, 
     headers: {
         'Content-Type': 'application/json'
     }
