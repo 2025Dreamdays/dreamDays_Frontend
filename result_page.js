@@ -44,7 +44,7 @@ window.onload = function() {
     const bio = urlParams.get('bio');
 
     // 값들을 화면에 표시
-    document.getElementById("name").textContent = `g${name}`;
+    document.getElementById("name").textContent = `${name}`;
     document.getElementById("age").textContent = `${age}`;
     document.getElementById("instagramId").textContent = `${instagramId}`;
     document.getElementById("department").textContent = `${department}`;
