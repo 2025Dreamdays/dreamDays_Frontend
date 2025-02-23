@@ -57,8 +57,12 @@ async function drawUser() {
 
         const data = await response.json();
         console.log("뽑힌 사용자 정보:", data);
-        const drawnUser = data.drawResult.drawnUser;
-        window.location.href = `result_page.html?name=${data.name}&age=${data.age}&instagramId=${data.instagramId}&department=${data.department}&gender=${data.gender}&mbti=${data.mbti}&bio=${data.bio}`;        
+
+        // 뽑힌 사용자 정보 추출
+        const drawnUser = data;  // 백엔드에서 보내주는 사용자 정보 그대로 받기
+
+        // 쿼리 파라미터로 데이터를 넘기기
+        window.location.href = `result_page.html?name=${drawnUser.name}&age=${drawnUser.age}&instagramId=${drawnUser.instagramId}&department=${drawnUser.department}&gender=${drawnUser.gender}&mbti=${drawnUser.mbti}&bio=${drawnUser.bio}`;        
     } catch (error) {
         console.error("뽑기 실패:", error);
     }
