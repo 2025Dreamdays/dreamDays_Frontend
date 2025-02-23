@@ -1,6 +1,12 @@
 const warningNumber = document.querySelector('.warningNumber');
 const warningName = document.querySelector('.warningName');
 
+const checkButton = document.querySelector('.testt')
+
+const drawPage = document.querySelector('.drawPage');
+const checkPage = document.querySelector('.checkPage');
+
+
 function inputValue() {
     const nameValue = document.getElementById('name').value;
     const studentNumberValue = document.getElementById('studentNumber').value;
@@ -26,3 +32,14 @@ function inputSense(e) {
     }
 }
 
+
+function putNone() {
+    if (inputValue()) {
+        drawPage.classList.toggle("none");
+        checkPage.classList.toggle("none");
+    }
+}
+
+
+
+checkButton.addEventListener('click', putNone);
