@@ -4,7 +4,8 @@ async function fetchUserInfo(name, studentNumber) {
         const response = await axios.get('https://likelion.hellofriend.cc/api/users/check-info', {
             params: {
                 name: name,
-                studentNumber: studentNumber
+                studentNumber: studentNumber,
+                isDraw : isDraw
             },
             withCredentials: true,  // 필요 시 쿠키 포함
         });
@@ -45,12 +46,13 @@ document.getElementById("form").addEventListener("submit", async function(event)
     }
 
     // 백엔드에서 사용자 정보 가져오기
-    const userInfo = await fetchUserInfo(name, studentNumber);
+    const userInfo = await fetchUserInfo(name, studentNumber, isDraw);
 
     if (userInfo) {
         // 사용자 정보가 있으면 화면에 표시
         document.getElementById("re_name").textContent = userInfo.name || "정보 없음";
         document.getElementById("re_studentNumber").textContent = userInfo.studentNumber || "정보 없음";
+        document.getElementById("re_isDraw").textContent = userInfo.studentNumber || "정보 없음";
 
         // 입력 페이지 숨기고 결과 페이지 보이기
         document.querySelector(".checkPage").classList.add("none");
