@@ -70,7 +70,5 @@ async function drawUser() {
     }
 }
 
-window.location.href = `result_page.html`;
-
 
 
