@@ -1,3 +1,5 @@
+
+
 document.getElementById("suss").addEventListener("click", async function () {
     const data = {
         name: document.getElementById("ip_name").value,
@@ -12,7 +14,12 @@ document.getElementById("suss").addEventListener("click", async function () {
     };
 
     try {
-        const response = await axios.post("https://likelion.hellofriend.cc/api/users/create-info", data);  // HTTPS로 요청
+        const response = await axios.post('https://likelion.hellofriend.cc/api/users/create-info', data, {
+            withCredentials: true,  // 쿠키 포함
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        });  // HTTPS로 요청
 
         if (response.status === 200) {
             alert("백엔드 연동 성공! 서버에서 응답 받음 ✅");
