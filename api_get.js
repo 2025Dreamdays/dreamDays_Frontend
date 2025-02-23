@@ -62,7 +62,7 @@ document.getElementById("form").addEventListener("submit", async function(event)
         document.getElementById('friendsButton').addEventListener('click', function() {
             if (userInfo) {
                 // URL 파라미터로 name과 studentNumber를 넘긴다
-                const url = `resoult_page.html?name=${encodeURIComponent(userInfo.name)}&studentNumber=${encodeURIComponent(userInfo.studentNumber)}`;
+                const url = `result_page.html?name=${encodeURIComponent(userInfo.name)}&studentNumber=${encodeURIComponent(userInfo.studentNumber)}`;
                 window.location.href = url;
             } else {
                 alert("사용자 정보를 찾을 수 없습니다 ❌");
