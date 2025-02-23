@@ -1,30 +1,42 @@
-
-
-document.getElementById("suss").addEventListener("click", async function () {
+document.getElementById('registerBtn').addEventListener('click', function() {
+    document.getElementById('infoForm').style.display = 'block';
+    document.getElementById('pt-line').style.display = 'block';
+    document.getElementById('bottomSection').style.display = 'block';
+    document.getElementById('suss').style.display = 'block';
+  });
+  
+  document.getElementById('suss').addEventListener('click', async function(event) {
+    event.preventDefault();
+  
     const data = {
-        name: document.getElementById("ip_name").value,
-        studentNumber : document.querySelector(".ip_st").value,
-        instagramId: document.querySelector(".ip_id").value,
-        age: document.getElementById("ip_age").value,
-        gender: document.getElementById("men_ck").checked ? "남성" : document.getElementById("women_ck").checked ? "여성" : "",
-        department: document.getElementById("dp_major").value,
-        mbti: document.getElementById("dp_mbti").value,
-        selectGender: document.getElementById("aa").checked ? "남성" : document.getElementById("bb").checked ? "여성" : "",
-        bio: document.querySelector(".ip_liner").value,
+      name: document.getElementById('ip_name').value,
+      studentNumber: document.querySelector('input[name="studentNumber"]').value,
+      instagramId: document.querySelector('input[name="instagramId"]').value,
+      age: document.getElementById('ip_age').value,
+      gender: document.querySelector('input[name="gender"]:checked') ? document.querySelector('input[name="gender"]:checked').id : '',
+      department: document.getElementById('dp_major').value,
+      mbti: document.getElementById('dp_mbti').value,
+      one_liner: document.querySelector('input[name="one_liner"]').value,
+      selectGender: document.querySelector('input[name="selectGender"]:checked') ? document.querySelector('input[name="selectGender"]:checked').id : '',
+      agree: document.querySelector('input[name="agree"]').checked
     };
-    axios.post("https://likelion.hellofriend.cc/api/users/create-info", data, {
-    withCredentials: true,
-    headers: {
-        'Content-Type': 'application/json'
-    } // CORS에서 쿠키를 보내려면 필수
-})
-.then(response => {
-    console.log("응답:", response);
-})
-.catch(error => {
-    console.error("에러 발생:", error);
-});
-
-});
-
-
+  
+    try {
+      const response = await axios.post('https://likelion.hellofriend.cc/api/users/create-info', data, {
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      });
+  
+      if (response.status === 200) {
+        console.log('Success:', response.data);
+        alert('등록이 완료되었습니다!');
+      } else {
+        throw new Error('Network response was not ok');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      alert('등록에 실패하였습니다. 다시 시도해주세요.');
+    }
+  });
+  
