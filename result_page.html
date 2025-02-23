@@ -48,25 +48,8 @@
         </section>
     </main>
 
-    <script>
-        // API 호출해서 데이터 받아오기
-        fetch('http://likelion.hellofriend.cc/api/draw') // GET 요청
-        .then(response => response.json())
-        .then(data => {
-            const drawnUser = data.drawResult.drawnUser;
-
-            document.getElementById('f_rp_name').textContent = drawnUser.name;
-            document.getElementById('f_rp_age').textContent = drawnUser.age;
-            document.getElementById('f_rp_reg').textContent = drawnUser.reg;
-            document.getElementById('f_rp_gender').textContent = drawnUser.gender;
-            document.getElementById('f_rp_insta').textContent = drawnUser.instagramId;
-            document.getElementById('f_rp_one').textContent = drawnUser.bio;
-            // 만약 MBTI가 있다면 추가
-            // document.getElementById('f_rp_mbti').textContent = drawnUser.mbti;
-        })
-        .catch(error => {
-            console.error('Error fetching data:', error);
-        });
-    </script>
+    <script src="result_page.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </body>
 </html>
