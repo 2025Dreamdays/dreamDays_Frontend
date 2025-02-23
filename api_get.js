@@ -54,8 +54,12 @@ document.getElementById("form").addEventListener("submit", async function(event)
         
         // 입력 페이지 숨기고 결과 페이지 보이기
         document.querySelector(".checkPage").classList.add("none");
-        document.querySelector(".drawPage").classList.remove("none");
+        document.querySelector(".drawPage").classList.remove("none");2
     } else {
         alert("사용자 정보를 찾을 수 없습니다 ❌");
     }
 });
+
+document.getElementById('friendsButton').addEventListener('click', function() {
+    window.location.href= `result_page.html?name=${params.name}&studentNumber=${params.studentNumber}`
+})
