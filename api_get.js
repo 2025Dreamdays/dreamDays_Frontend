@@ -1,28 +1,38 @@
-document.getElementById('form').addEventListener('submit', function(e)
-{
-    e.preventDefault();
+// 폼 제출 이벤트 핸들러
+document.getElementById("form").addEventListener("submit", async function(event) {
+    event.preventDefault();  // 기본 폼 제출 방지
 
-    const name = document.getElementById('name').value;
-    const studentNumber = document.getElementById('studentNumber').value;
+    // 입력값 가져오기
+    const name = document.getElementById("name").value.trim();
+    const studentNumber = document.getElementById("studentNumber").value.trim();
 
-    fetch('https://likelion.hellofriend.cc/api/users/check-info' , {
-        method: 'GET',
-        headers: {
-            'Content-Type' : 'application/json'
-        },
+    // 입력값 검증
+    if (!name) {
+        document.querySelector(".warningName").style.display = "block";
+        return;
+    } else {
+        document.querySelector(".warningName").style.display = "none";
+    }
 
-    }) 
-    .then(response => response.json())
-    .then(data => {
-        if(data.isDraw === false) {
-            alert("사전등록이 되어 있지 않는 사용자입니다. 등록을 먼저 진행해주세요")
-        } else {
-            window.location.href = 'viewInfo.html';
-        }
-    }) 
-    .catch(error => {
-        console.log('오류발생', error);
-        
-    });
-    
+    if (!studentNumber) {
+        document.querySelector(".warningNumber").style.display = "block";
+        return;
+    } else {
+        document.querySelector(".warningNumber").style.display = "none";
+    }
+
+    // 백엔드에서 사용자 정보 가져오기
+    const userInfo = await fetchUserInfo(name, studentNumber);
+
+    if (userInfo) {
+        // 가져온 정보를 HTML 요소에 삽입
+        document.getElementById("re_name").textContent = userInfo.name || "정보 없음";
+        document.getElementById("re_studentNumber").textContent = userInfo.studentNumber || "정보 없음";
+
+        // 화면 전환 (checkPage 숨기고 drawPage 보이기)
+        document.querySelector(".checkPage").classList.add("none");
+        document.querySelector(".drawPage").classList.remove("none");
+    } else {
+        alert("사용자 정보를 찾을 수 없습니다 ❌");
+    }
 });
