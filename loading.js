@@ -110,6 +110,8 @@ async function drawUser() {
     }
 }
 
+drawUser();
+
 
 
 
