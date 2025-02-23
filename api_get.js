@@ -61,5 +61,5 @@ document.getElementById("form").addEventListener("submit", async function(event)
 });
 
 document.getElementById('friendsButton').addEventListener('click', function() {
-    window.location.href= `result_page.html?name=${params.name}&studentNumber=${params.studentNumber}`
+    window.location.href= `loading.html?name=${params.name}&studentNumber=${params.studentNumber}`
 })
