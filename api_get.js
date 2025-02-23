@@ -45,7 +45,7 @@ document.getElementById("form").addEventListener("submit", async function(event)
     }
 
     // 백엔드에서 사용자 정보 가져오기
-    const userInfo = await fetchUserInfo(name, studentNumber, isDraw);
+    const userInfo = await fetchUserInfo(name, studentNumber);
 
     if (userInfo) {
         // 사용자 정보가 있으면 화면에 표시
