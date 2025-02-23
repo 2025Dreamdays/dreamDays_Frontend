@@ -1,4 +1,27 @@
-// 폼 제출 이벤트 핸들러
+// 사용자 정보를 백엔드에서 가져오는 함수
+async function fetchUserInfo(name, studentNumber) {
+    try {
+        const response = await axios.get('https://likelion.hellofriend.cc/api/users/check-info', {
+            params: {
+                name: name,
+                studentNumber: studentNumber
+            },
+            withCredentials: true,  // 필요 시 쿠키 포함
+        });
+
+        if (response.status === 200) {
+            return response.data;  // 서버에서 받은 사용자 정보 반환
+        } else {
+            console.error("서버 응답 오류 ❌", response);
+            return null;
+        }
+    } catch (error) {
+        console.error("백엔드 요청 실패 ❌", error);
+        return null;
+    }
+}
+
+// 폼 제출 이벤트 리스너
 document.getElementById("form").addEventListener("submit", async function(event) {
     event.preventDefault();  // 기본 폼 제출 방지
 
@@ -6,7 +29,7 @@ document.getElementById("form").addEventListener("submit", async function(event)
     const name = document.getElementById("name").value.trim();
     const studentNumber = document.getElementById("studentNumber").value.trim();
 
-    // 입력값 검증
+    // 입력값 검증 (필수 입력)
     if (!name) {
         document.querySelector(".warningName").style.display = "block";
         return;
@@ -25,11 +48,11 @@ document.getElementById("form").addEventListener("submit", async function(event)
     const userInfo = await fetchUserInfo(name, studentNumber);
 
     if (userInfo) {
-        // 가져온 정보를 HTML 요소에 삽입
+        // 사용자 정보가 있으면 화면에 표시
         document.getElementById("re_name").textContent = userInfo.name || "정보 없음";
         document.getElementById("re_studentNumber").textContent = userInfo.studentNumber || "정보 없음";
 
-        // 화면 전환 (checkPage 숨기고 drawPage 보이기)
+        // 입력 페이지 숨기고 결과 페이지 보이기
         document.querySelector(".checkPage").classList.add("none");
         document.querySelector(".drawPage").classList.remove("none");
     } else {
