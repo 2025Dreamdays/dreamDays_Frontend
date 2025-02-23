@@ -1,3 +1,5 @@
+let userInfo = null;  // 전역 변수 선언 (사용자 정보 저장)
+
 // 사용자 정보를 백엔드에서 가져오는 함수
 async function fetchUserInfo(name, studentNumber) {
     try {
@@ -5,8 +7,8 @@ async function fetchUserInfo(name, studentNumber) {
             params: {
                 name: name,
                 studentNumber: studentNumber
-                },
-            withCredentials: true,  // 필요 시 쿠키 포함
+            },
+            withCredentials: true  // 필요 시 쿠키 포함
         });
 
         if (response.status === 200) {
@@ -45,7 +47,7 @@ document.getElementById("form").addEventListener("submit", async function(event)
     }
 
     // 백엔드에서 사용자 정보 가져오기
-    const userInfo = await fetchUserInfo(name, studentNumber);
+    userInfo = await fetchUserInfo(name, studentNumber);
 
     if (userInfo) {
         // 사용자 정보가 있으면 화면에 표시
@@ -54,12 +56,19 @@ document.getElementById("form").addEventListener("submit", async function(event)
         
         // 입력 페이지 숨기고 결과 페이지 보이기
         document.querySelector(".checkPage").classList.add("none");
-        document.querySelector(".drawPage").classList.remove("none");2
+        document.querySelector(".drawPage").classList.remove("none");
+
+        // 친구 뽑기 버튼을 클릭했을 때 URL 파라미터로 값을 넘기기
+        document.getElementById('friendsButton').addEventListener('click', function() {
+            if (userInfo) {
+                // URL 파라미터로 name과 studentNumber를 넘긴다
+                const url = `loading.html?name=${encodeURIComponent(userInfo.name)}&studentNumber=${encodeURIComponent(userInfo.studentNumber)}`;
+                window.location.href = url;
+            } else {
+                alert("사용자 정보를 찾을 수 없습니다 ❌");
+            }
+        });
     } else {
         alert("사용자 정보를 찾을 수 없습니다 ❌");
     }
 });
-
-document.getElementById('friendsButton').addEventListener('click', function() {
-    window.location.href= `loading.html?name=${response.name}&studentNumber=${response.studentNumber}`
-})
