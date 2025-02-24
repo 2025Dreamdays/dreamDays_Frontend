@@ -6,7 +6,7 @@ window.onload = function() {
     const department = urlParams.get('department');
     const gender = urlParams.get('gender');
     const mbti = urlParams.get('mbti');
-    const bio = urlParams.get('bio');
+    const bio = urlParams.get('bio'); //파라미터 안에 있는 값
 
     // 값들을 화면에 표시
     document.getElementById("name").textContent = `${name}`;
@@ -17,3 +17,4 @@ window.onload = function() {
     document.getElementById("mbti").textContent = `${mbti}`;
     document.getElementById("bio").textContent = `${bio}`;
 }
+ 
