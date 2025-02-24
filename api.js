@@ -1,3 +1,10 @@
+document.getElementById('registerBtn').addEventListener('click', function() {
+  document.getElementById('infoForm').style.display = 'block';
+  document.getElementById('pt-line').style.display = 'block';
+  document.getElementById('bottomSection').style.display = 'block';
+  document.getElementById('suss').style.display = 'block';
+});
+
 document.addEventListener("DOMContentLoaded", function () {
     const inputs = document.querySelectorAll("input, select");
     
