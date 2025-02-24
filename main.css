@@ -186,9 +186,11 @@ table {
 
 .likelion {
     position: fixed;
-    width: 287px;
-    height: 287px;
-    top: 50%
+    width: 17vw;
+    height: 17vw;
+    max-width: 370px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .checkInfo {
@@ -255,7 +257,8 @@ table {
 
 @media all and (max-width:1024px) {
     .likelion {
-        display: none;
+        width: 14vh;
+        height: 14vh;
     }
 
     .main {
@@ -375,7 +378,8 @@ table {
 
 @media all and (min-width:480px) and (max-width:1024px) {
     .likelion {
-        display: none;
+        width: 17vh;
+        height: 17vh;
     }
 
     .preRe {
@@ -438,7 +442,8 @@ table {
 
 @media all and (min-width:1025px) and (max-width:1650px) {
     .likelion {
-        display: none;
+        width: 17vw;
+        height: 17vw;
     }
 
     .hello {
