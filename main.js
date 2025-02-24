@@ -32,7 +32,7 @@ registerInfo.addEventListener('click', clickRegister);
 const checkOrangeDisplayLink = () => {
     setTimeout(() => {
         window.location.href = "checkInfo.html"
-    }, 1100)
+    }, 1000)
 }
 checkInfo.addEventListener('click', checkOrangeDisplayLink);
 
@@ -41,6 +41,6 @@ checkInfo.addEventListener('click', checkOrangeDisplayLink);
 const checkBlackDisplayLink = () => {
     setTimeout(() => {
         window.location.href = "information.html"
-    }, 1100)
+    }, 1000)
 }
 registerInfo.addEventListener('click', checkBlackDisplayLink);
