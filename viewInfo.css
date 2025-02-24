@@ -345,3 +345,9 @@ button {
         min-width: 400px;
     }
 }
+
+@media all and (max-width:340px) {
+    .viewYourRegister {
+        height: 17px;
+    }
+}
