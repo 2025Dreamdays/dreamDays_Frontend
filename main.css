@@ -201,6 +201,10 @@ table {
     border-radius: 4em;
 }
 
+.big {
+    justify-content: right;
+}
+
 .registerInfo {
     width: 259px;
     height: 79px;
@@ -230,6 +234,10 @@ table {
 .titleX {
     display: flex;
     flex-direction: row;
+}
+
+.titleX {
+    justify-content: right;
 }
 
 .mark {
