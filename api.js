@@ -112,10 +112,6 @@ document.getElementById("dp_mbti").addEventListener("change", function() {
 
 function inputValues() {
     let isValid = true; // 유효성 검사 결과 저장
-    const warningMessages = document.querySelectorAll(".waring");
-    
-    // 기존에 있던 경고 메시지 제거
-    warningMessages.forEach(msg => msg.style.display = "none");
 
     function showWarning(element) {
         const warning = element.nextElementSibling;
@@ -123,6 +119,13 @@ function inputValues() {
             warning.style.display = "block"; // 경고 메시지 표시
         }
         isValid = false;
+    }
+
+    function hideWarning(element) {
+        const warning = element.nextElementSibling;
+        if (warning && warning.classList.contains("waring")) {
+            warning.style.display = "none"; // 경고 메시지 숨김
+        }
     }
 
     const nameValue = document.getElementById('ip_name');
@@ -137,21 +140,70 @@ function inputValues() {
     const genderMe = document.getElementById('aa');
     const genderWo = document.getElementById('bb');
 
-    if (nameValue.value.trim() === "") showWarning(nameValue);
-    if (studentNumberValue.value.trim() === "") showWarning(studentNumberValue);
-    if (idValue.value.trim() === "") showWarning(idValue);
-    if (ageValue.value.trim() === "") showWarning(ageValue);
-    if (!manCk.checked && !womenCk.checked) showWarning(manCk.parentElement);
-    if (major.value === "") showWarning(major);
-    if (mbti.value === "") showWarning(mbti);
-    if (oneline.value.trim() === "") showWarning(oneline);
-    if (!genderMe.checked && !genderWo.checked) showWarning(genderMe.parentElement);
+    if (nameValue.value.trim() === "") {
+        showWarning(nameValue);
+    } else {
+        hideWarning(nameValue);
+    }
+
+    if (studentNumberValue.value.trim() === "") {
+        showWarning(studentNumberValue);
+    } else {
+        hideWarning(studentNumberValue);
+    }
+
+    if (idValue.value.trim() === "") {
+        showWarning(idValue);
+    } else {
+        hideWarning(idValue);
+    }
+
+    if (ageValue.value.trim() === "") {
+        showWarning(ageValue);
+    } else {
+        hideWarning(ageValue);
+    }
+
+    if (!manCk.checked && !womenCk.checked) {
+        showWarning(manCk.parentElement);
+    } else {
+        hideWarning(manCk.parentElement);
+    }
+
+    if (major.value === "") {
+        showWarning(major);
+    } else {
+        hideWarning(major);
+    }
+
+    if (mbti.value === "") {
+        showWarning(mbti);
+    } else {
+        hideWarning(mbti);
+    }
+
+    if (oneline.value.trim() === "") {
+        showWarning(oneline);
+    } else {
+        hideWarning(oneline);
+    }
+
+    if (!genderMe.checked && !genderWo.checked) {
+        showWarning(genderMe.parentElement);
+    } else {
+        hideWarning(genderMe.parentElement);
+    }
 
     return isValid;
 }
 
 
-// 등록 버튼 이벤트 리스너 추가
-document.getElementById('suss').addEventListener('click', function(event) {
-    event.preventDefault(); // 기본 제출 동작 방
+document.querySelectorAll("input, select").forEach((element) => {
+    element.addEventListener("input", function () {
+        const warning = this.nextElementSibling;
+        if (warning && warning.classList.contains("waring")) {
+            warning.style.display = "none"; // 입력하면 경고 메시지 사라짐
+        }
+    });
 });
+
