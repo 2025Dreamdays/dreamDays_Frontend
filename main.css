@@ -264,8 +264,7 @@ table {
 
 @media all and (max-width:1024px) {
     .likelion {
-        width: 14vh;
-        height: 14vh;
+        display: none;
 
     }
 
@@ -385,8 +384,8 @@ table {
 
 @media all and (min-width:480px) and (max-width:1024px) {
     .likelion {
-        width: 17vh;
-        height: 17vh;
+        display: none;
+
     }
 
     .preRe {

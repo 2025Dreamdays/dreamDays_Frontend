@@ -43,3 +43,7 @@ function putNone() {
 
 
 checkButton.addEventListener('click', putNone);
+
+window.addEventListener("popstate", function (event) {
+    window.location.href = "index.html";
+});
