@@ -31,12 +31,22 @@ document.getElementById('suss').addEventListener('click', async function(event) 
     if (response.status === 200) {
       console.log('Success:', response.data);
       alert('등록이 완료되었습니다!');
+      window.location.href = "index.html";
     } else {
       throw new Error('Network response was not ok');
     }
   } catch (error) {
-    console.error('Error:', error);
-    alert('등록에 실패하였습니다. 다시 시도해주세요.');
+    if (error.response) {
+        if (error.response.status === 400) {
+            alert("형식이 올바르지 않습니다.");
+        } else if (error.response.status === 500) {
+            alert("이미 등록된 사용자입니다.");
+        } else {
+            alert("알 수 없는 오류가 발생했습니다.");
+        }
+    } else {
+        alert("서버에 연결할 수 없습니다. 네트워크를 확인해주세요.");
+    }
   }
 });
 
@@ -140,14 +150,8 @@ function inputValues() {
     return isValid;
 }
 
-function lego() {
-    if (inputValues()) {
-        window.location.href = "index.html"; // 입력이 다 완료되었을 때만 이동
-    }
-}
 
 // 등록 버튼 이벤트 리스너 추가
 document.getElementById('suss').addEventListener('click', function(event) {
-    event.preventDefault(); // 기본 제출 동작 방지
-    lego();
+    event.preventDefault(); // 기본 제출 동작 방
 });
