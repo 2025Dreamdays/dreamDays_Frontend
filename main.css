@@ -334,9 +334,13 @@ table {
     }
 
     .preRe {
-        height: 15px;
+        height: 13px;
 
         margin-bottom: 15.61px;
+    }
+
+    .preRe>img {
+        height: 20px;
     }
 
     .orangeDisplay {

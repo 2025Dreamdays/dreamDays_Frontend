@@ -1,4 +1,4 @@
-window.onload = function() {
+window.onload = function () {
     const urlParams = new URLSearchParams(window.location.search);
     const name = urlParams.get('name');
     const age = urlParams.get('age');
@@ -17,4 +17,3 @@ window.onload = function() {
     document.getElementById("mbti").textContent = `${mbti}`;
     document.getElementById("bio").textContent = `${bio}`;
 }
- 
