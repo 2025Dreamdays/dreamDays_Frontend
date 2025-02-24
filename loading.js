@@ -101,7 +101,7 @@ async function drawUser() {
         console.log("뽑힌 사용자 정보:", drawnUser);  // 뽑힌 사용자 정보 확인
 
         // 쿼리 파라미터로 데이터를 넘기기
-        const redirectUrl = `   `;
+        const redirectUrl = `result_page.html?name=${drawnUser.name}&age=${drawnUser.age}&instagramId=${drawnUser.instagramId}&department=${drawnUser.department}&gender=${drawnUser.gender}&mbti=${drawnUser.mbti}&bio=${drawnUser.bio}`;
         console.log("리디렉션 URL:", redirectUrl);  // 리디렉션 URL 확인
 
         window.location.href = redirectUrl;  // 페이지 리디렉션
