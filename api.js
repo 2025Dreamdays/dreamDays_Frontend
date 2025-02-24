@@ -110,99 +110,62 @@ document.getElementById("dp_mbti").addEventListener("change", function() {
 
 
 
-function inputValues() {
-    let isValid = true; // 유효성 검사 결과 저장
+document.addEventListener("DOMContentLoaded", function () {
+    const inputs = document.querySelectorAll("input, select");
+    
+    // 🚨 모든 입력 필드를 감시하고, 비어 있으면 경고 표시
+    inputs.forEach(input => {
+        input.addEventListener("input", function () {
+            validateField(input);
+        });
+    });
 
-    function showWarning(element) {
-        const warning = element.nextElementSibling;
+    function validateField(input) {
+        const warning = input.nextElementSibling;
         if (warning && warning.classList.contains("waring")) {
-            warning.style.display = "block"; // 경고 메시지 표시
+            if (input.type === "checkbox") {
+                // 체크박스는 개별적으로 처리
+                const parent = input.closest(".ip_ct");
+                if (parent && parent.querySelector("input:checked")) {
+                    warning.style.display = "none"; // 체크되면 경고 숨김
+                } else {
+                    warning.style.display = "block"; // 체크 안되면 경고 표시
+                }
+            } else {
+                if (input.value.trim() === "" || input.value === null) {
+                    warning.style.display = "block"; // 비어 있으면 경고 표시
+                } else {
+                    warning.style.display = "none"; // 입력하면 경고 숨김
+                }
+            }
         }
-        isValid = false;
     }
 
-    function hideWarning(element) {
-        const warning = element.nextElementSibling;
-        if (warning && warning.classList.contains("waring")) {
-            warning.style.display = "none"; // 경고 메시지 숨김
-        }
+    function validateForm() {
+        let isValid = true;
+        inputs.forEach(input => {
+            validateField(input);
+            if ((input.type !== "checkbox" && input.value.trim() === "") ||
+                (input.type === "checkbox" && !document.querySelector(`input[name="${input.name}"]:checked`))) {
+                isValid = false;
+            }
+        });
+        return isValid;
     }
 
-    const nameValue = document.getElementById('ip_name');
-    const studentNumberValue = document.getElementById('ip_student');
-    const idValue = document.getElementById('ip_instaid');
-    const ageValue = document.getElementById('ip_age');
-    const manCk = document.getElementById('men_ck');
-    const womenCk = document.getElementById('women_ck');
-    const major = document.getElementById('dp_major');
-    const mbti = document.getElementById('dp_mbti');
-    const oneline = document.getElementById('ip_line');
-    const genderMe = document.getElementById('aa');
-    const genderWo = document.getElementById('bb');
+    // 🚨 페이지 로드 후 빈 필드가 있으면 자동으로 경고 표시
+    setTimeout(() => {
+        inputs.forEach(input => validateField(input));
+    }, 500);
 
-    if (nameValue.value.trim() === "") {
-        showWarning(nameValue);
-    } else {
-        hideWarning(nameValue);
-    }
-
-    if (studentNumberValue.value.trim() === "") {
-        showWarning(studentNumberValue);
-    } else {
-        hideWarning(studentNumberValue);
-    }
-
-    if (idValue.value.trim() === "") {
-        showWarning(idValue);
-    } else {
-        hideWarning(idValue);
-    }
-
-    if (ageValue.value.trim() === "") {
-        showWarning(ageValue);
-    } else {
-        hideWarning(ageValue);
-    }
-
-    if (!manCk.checked && !womenCk.checked) {
-        showWarning(manCk.parentElement);
-    } else {
-        hideWarning(manCk.parentElement);
-    }
-
-    if (major.value === "") {
-        showWarning(major);
-    } else {
-        hideWarning(major);
-    }
-
-    if (mbti.value === "") {
-        showWarning(mbti);
-    } else {
-        hideWarning(mbti);
-    }
-
-    if (oneline.value.trim() === "") {
-        showWarning(oneline);
-    } else {
-        hideWarning(oneline);
-    }
-
-    if (!genderMe.checked && !genderWo.checked) {
-        showWarning(genderMe.parentElement);
-    } else {
-        hideWarning(genderMe.parentElement);
-    }
-
-    return isValid;
-}
-
-
-document.querySelectorAll("input, select").forEach((element) => {
-    element.addEventListener("input", function () {
-        const warning = this.nextElementSibling;
-        if (warning && warning.classList.contains("waring")) {
-            warning.style.display = "none"; // 입력하면 경고 메시지 사라짐
+    // ✅ "등록 완료하기" 버튼 클릭 시 전체 검증
+    document.getElementById("suss").addEventListener("click", function (event) {
+        event.preventDefault(); // 기본 제출 동작 방지
+        if (validateForm()) {
+            alert("모든 입력이 완료되었습니다!");
+            // window.location.href = "index.html"; // 필요시 이동 가능
+        } else {
+            alert("모든 필드를 입력해야 합니다!");
         }
     });
 });
