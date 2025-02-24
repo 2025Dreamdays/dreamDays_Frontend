@@ -518,17 +518,16 @@
   cursor: pointer;
 }
 
-@media all and (max-width:479px) {
-  body {
-    margin: 0px;
-  }
+  @media all and (max-width:479px) {
+    body {
+      margin: 0px;
+    }
 
-  .main {
-    margin: 0px;
-    height: 100vh;
-    width: 100%;
-    position: relative;
-    justify-items: center;
+    .main {
+      margin: 0px;
+      height: 100vh;
+      width: 100%;
+      position: relative;
   }
 
 
@@ -810,13 +809,14 @@
     height: 100vh;
     width: 100%;
     position: relative;
-    justify-items: center;
+    justify-items: center;  
+    align-content: center;
   }
 
   .hf {
     color: white;
     /* text-align: center; */
-    padding-top: 15%;
+    /* padding-top: 15%; */
   }
 
   .hf>img {

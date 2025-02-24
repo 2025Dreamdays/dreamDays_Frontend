@@ -207,7 +207,7 @@ button {
 
 .tags,
 .responses {
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     margin-right: 30px;
 }
