@@ -1,44 +1,44 @@
-// document.getElementById('registerBtn').addEventListener('click', function() {
-//   document.getElementById('infoForm').style.display = 'block';
-//   document.getElementById('pt-line').style.display = 'block';
-//   document.getElementById('bottomSection').style.display = 'block';
-//   document.getElementById('suss').style.display = 'block';
-// });
+document.getElementById('registerBtn').addEventListener('click', function() {
+  document.getElementById('infoForm').style.display = 'block';
+  document.getElementById('pt-line').style.display = 'block';
+  document.getElementById('bottomSection').style.display = 'block';
+  document.getElementById('suss').style.display = 'block';
+});
 
-// document.getElementById('suss').addEventListener('click', async function(event) {
-//   event.preventDefault();
+document.getElementById('suss').addEventListener('click', async function(event) {
+  event.preventDefault();
 
-//   const data = {
-//     name: document.getElementById('ip_name').value, 
-//     studentNumber: document.querySelector('input[name="studentNumber"]').value,
-//     instagramId: document.querySelector('input[name="instagramId"]').value,
-//     age: document.getElementById('ip_age').value,
-//     gender: document.getElementById("men_ck").checked ? "남성" : document.getElementById("women_ck").checked ? "여성" : "",
-//     department: document.getElementById('dp_major').value,
-//     mbti: document.getElementById('dp_mbti').value,
-//     selectGender: document.getElementById("aa").checked ? "남성" : document.getElementById("bb").checked ? "여성" : "",
-//     bio: document.getElementById('ip_line').value
+  const data = {
+    name: document.getElementById('ip_name').value, 
+    studentNumber: document.querySelector('input[name="studentNumber"]').value,
+    instagramId: document.querySelector('input[name="instagramId"]').value,
+    age: document.getElementById('ip_age').value,
+    gender: document.getElementById("men_ck").checked ? "남성" : document.getElementById("women_ck").checked ? "여성" : "",
+    department: document.getElementById('dp_major').value,
+    mbti: document.getElementById('dp_mbti').value,
+    selectGender: document.getElementById("aa").checked ? "남성" : document.getElementById("bb").checked ? "여성" : "",
+    bio: document.getElementById('ip_line').value
 
-//   };
+  };
 
-//   try {
-//     const response = await axios.post('https://likelion.hellofriend.cc/api/users/create-info', data, {
-//       headers: {
-//         'Content-Type': 'application/json'
-//       }
-//     });
+  try {
+    const response = await axios.post('https://likelion.hellofriend.cc/api/users/create-info', data, {
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    });
 
-//     if (response.status === 200) {
-//       console.log('Success:', response.data);
-//       alert('등록이 완료되었습니다!');
-//     } else {
-//       throw new Error('Network response was not ok');
-//     }
-//   } catch (error) {
-//     console.error('Error:', error);
-//     alert('등록에 실패하였습니다. 다시 시도해주세요.');
-//   }
-// });
+    if (response.status === 200) {
+      console.log('Success:', response.data);
+      alert('등록이 완료되었습니다!');
+    } else {
+      throw new Error('Network response was not ok');
+    }
+  } catch (error) {
+    console.error('Error:', error);
+    alert('등록에 실패하였습니다. 다시 시도해주세요.');
+  }
+});
 
 
 const button = document.querySelector(".sus")
@@ -101,58 +101,53 @@ document.getElementById("dp_mbti").addEventListener("change", function() {
 
 
 function inputValues() {
-  const nameValue = document.getElementById('id_name').value;
-  const studentNumberValue = document.getElementById('ip_student').value;
-  const idvalue = document.getElementById('ip_instaid').value;
-  const ipage = document.getElementById('ip_age').value;
-  const manck = document.getElementById('men_ck').value;
-  const womenck = document.getElementById('women_ck').value;
-  const major = document.getElementById('dp_major').value;
-  const mbti = document.getElementById('dp_mbti').value;
-  const oneline = document.getElementById('ip_line').value;
-  const genderckme = document.getElementById('aa').value
-  const genderckwo = document.getElementById('bb').value;
- 
-  if(nameValue === "" || studentNumberValue === "" || idvalue === "" ||
-      ipage === "" || (manck.checked === false && womenck.checked === false) || major === "" ||
-      mbti === "" || oneline === "" || (genderckme.checked === false && genderckwo.checked === false)
-  ) {
-      if(nameValue === "") {
-          warning.classList.add('war');
-      } else if(studentNumberValue === "") {
-          warning.classList.add('war');
-      } else if(idvalue === "") {
-          warning.classList.add('war');
-      } else if(ipage === "") {
-          warning.classList.add('war');
-      } else if((manck.checked === false && womenck.checked)) {
-          warning.classList.add('war');
-      } else if(major === "") {
-          warning.classList.add('war');
-      } else if(mbti === "") {
-          warning.classList.add('war');
-      } else if(oneline === "") {
-          warning.classList.add('war');
-      } else if((genderckme.checked === false && genderckwo.checked === false)) {
-          warning.classList.add('war');
-      } else {
-          warning.classList.add('war');
-      }
-      return false
-  } else {
-      return true
-  }
+    let isValid = true; // 유효성 검사 결과 저장
+    const warningMessages = document.querySelectorAll(".waring");
+    
+    // 기존에 있던 경고 메시지 제거
+    warningMessages.forEach(msg => msg.style.display = "none");
+
+    function showWarning(element) {
+        const warning = element.nextElementSibling;
+        if (warning && warning.classList.contains("waring")) {
+            warning.style.display = "block"; // 경고 메시지 표시
+        }
+        isValid = false;
+    }
+
+    const nameValue = document.getElementById('ip_name');
+    const studentNumberValue = document.getElementById('ip_student');
+    const idValue = document.getElementById('ip_instaid');
+    const ageValue = document.getElementById('ip_age');
+    const manCk = document.getElementById('men_ck');
+    const womenCk = document.getElementById('women_ck');
+    const major = document.getElementById('dp_major');
+    const mbti = document.getElementById('dp_mbti');
+    const oneline = document.getElementById('ip_line');
+    const genderMe = document.getElementById('aa');
+    const genderWo = document.getElementById('bb');
+
+    if (nameValue.value.trim() === "") showWarning(nameValue);
+    if (studentNumberValue.value.trim() === "") showWarning(studentNumberValue);
+    if (idValue.value.trim() === "") showWarning(idValue);
+    if (ageValue.value.trim() === "") showWarning(ageValue);
+    if (!manCk.checked && !womenCk.checked) showWarning(manCk.parentElement);
+    if (major.value === "") showWarning(major);
+    if (mbti.value === "") showWarning(mbti);
+    if (oneline.value.trim() === "") showWarning(oneline);
+    if (!genderMe.checked && !genderWo.checked) showWarning(genderMe.parentElement);
+
+    return isValid;
 }
 
 function lego() {
-  if(inputValues()) {
-      window.location.href ="index.html";
-  }else{
-
-  }
+    if (inputValues()) {
+        window.location.href = "index.html"; // 입력이 다 완료되었을 때만 이동
+    }
 }
 
-document.getElementById('suss').addEventListener('click', function() {
-  inputValues();
-  lego();
-})
+// 등록 버튼 이벤트 리스너 추가
+document.getElementById('suss').addEventListener('click', function(event) {
+    event.preventDefault(); // 기본 제출 동작 방지
+    lego();
+});
