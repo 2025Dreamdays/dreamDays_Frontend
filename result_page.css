@@ -113,6 +113,7 @@
         margin-top: 10%;
         justify-content: center;
 
+
     }
 
     .mat_sus {
@@ -216,6 +217,8 @@
             justify-content: space-evenly;
         }
 
+
+
     .left_title {
         width: 75px;
         display: flex;
@@ -299,6 +302,7 @@
             justify-content: space-evenly;
         }
         
+
 
     .left_title {
         width: 75px;
@@ -392,6 +396,7 @@
             padding-top:0px;
             justify-content: space-evenly;
         }
+
 
     .left_title {
         width: 75px;
