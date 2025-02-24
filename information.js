@@ -1,6 +1,6 @@
 const button = document.querySelector(".sus")
 
-
+const warning = document.querySelector('.warningName');
 
 document.addEventListener("DOMContentLoaded", function () {
     const registerBtn = document.getElementById("registerBtn");
