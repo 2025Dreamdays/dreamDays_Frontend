@@ -121,18 +121,19 @@
         src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-Title.woff') format('woff');
         color: #1C1B1A;
         font-size: 1.2em;
-          }
-          .result_ct {
-            display : flex;
-            flex-direction: row;
-            gap : 1.2em;
-            /* padding-top: 10%;   */
-            /* padding-bottom: 10%; */
-            margin-left : 2%;
-            margin-right: 2%;
-            margin : 0 1em;
-            padding-top:0px;
-        }
+    }
+
+    .result_ct {
+        display: flex;
+        flex-direction: row;
+        gap: 1.2em;
+        /* padding-top: 10%;   */
+        /* padding-bottom: 10%; */
+        margin-left: 2%;
+        margin-right: 2%;
+        margin: 0 1em;
+        padding-top: 0px;
+    }
 
     .left_title {
         width: 75px;
@@ -202,20 +203,22 @@
         src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-Title.woff') format('woff');
         color: #1C1B1A;
         font-size: 1.2em;
-          }
-          .result_ct {
-            display : flex;
-            flex-direction: row;
-            width : 90%;
-            gap : 1.2em;
-            /* padding-top: 10%;   */
-            /* padding-bottom: 10%; */
-            margin-left : 2%;
-            margin-right: 2%;
-            margin : 0 1em;
-            padding-top:0px;
-            justify-content: space-evenly;
-        }
+        width: 60%;
+    }
+
+    .result_ct {
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        gap: 1.2em;
+        /* padding-top: 10%;   */
+        /* padding-bottom: 10%; */
+        margin-left: 2%;
+        margin-right: 2%;
+        margin: 0 1em;
+        padding-top: 0px;
+        justify-content: space-evenly;
+    }
 
 
 
@@ -287,21 +290,22 @@
         src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-Title.woff') format('woff');
         color: #1C1B1A;
         font-size: 1.2em;
-          }
-          .result_ct {
-            display : flex;
-            flex-direction: row;
-            width : 90%;
-            gap : 1.2em;
-            /* padding-top: 10%;   */
-            /* padding-bottom: 10%; */
-            margin-left : 2%;
-            margin-right: 2%;
-            margin : 0 1em;
-            padding-top:0px;
-            justify-content: space-evenly;
-        }
-        
+    }
+
+    .result_ct {
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        gap: 1.2em;
+        /* padding-top: 10%;   */
+        /* padding-bottom: 10%; */
+        margin-left: 2%;
+        margin-right: 2%;
+        margin: 0 1em;
+        padding-top: 0px;
+        justify-content: space-evenly;
+    }
+
 
 
     .left_title {
@@ -382,24 +386,25 @@
         src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-Title.woff') format('woff');
         color: #1C1B1A;
         font-size: 1.2em;
-          }
-          .result_ct {
-            display : flex;
-            flex-direction: row;
-            width : 90%;
-            gap : 1.2em;
-            /* padding-top: 10%;   */
-            /* padding-bottom: 10%; */
-            margin-left : 2%;
-            margin-right: 2%;
-            margin : 0 1em;
-            padding-top:0px;
-            justify-content: space-evenly;
-        }
+    }
+
+    .result_ct {
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        gap: 1.2em;
+        /* padding-top: 10%;   */
+        /* padding-bottom: 10%; */
+        margin-left: 2%;
+        margin-right: 2%;
+        margin: 0 1em;
+        padding-top: 0px;
+        justify-content: space-evenly;
+    }
 
 
     .left_title {
-        width: 75px;
+        width: 120px;
         display: flex;
         flex-direction: column;
         gap: 2.3em;
@@ -428,7 +433,7 @@
 
     .left_title>div {
         font-size: 1.5em;
-        width: 75px;
+        width: 120px;
     }
 
     .right_title>div {

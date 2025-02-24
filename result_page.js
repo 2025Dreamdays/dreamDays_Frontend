@@ -17,3 +17,12 @@ window.onload = function () {
     document.getElementById("mbti").textContent = `${mbti}`;
     document.getElementById("bio").textContent = `${bio}`;
 }
+
+
+
+const btn = document.querySelector('.mat_sus');
+
+
+
+btn.addEventListener('click', () => { window.location.href = "index.html" });
+
