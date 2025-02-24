@@ -140,7 +140,6 @@ table {
 
 .body {
     margin: 0px;
-
 }
 
 .orange {
@@ -185,7 +184,7 @@ table {
 }
 
 .likelion {
-    position: fixed;
+    position: absolute;
     width: 17vw;
     height: 17vw;
     max-width: 370px;
@@ -259,6 +258,7 @@ table {
     .likelion {
         width: 14vh;
         height: 14vh;
+
     }
 
     .main {
