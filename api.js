@@ -171,4 +171,4 @@ window.addEventListener("popstate", function (event) {
     } else {
       history.pushState(null, null, location.href); // 현재 페이지 유지
     }
-  });
+  }); ㄴ
