@@ -163,3 +163,12 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 })
+
+window.addEventListener("popstate", function (event) {
+    const userResponse = confirm("페이지를 떠나시겠습니까? 변경사항이 저장되지 않습니다?");
+    if (userResponse) {
+      window.location.href = "information.html"; // 이동할 페이지 URL
+    } else {
+      history.pushState(null, null, location.href); // 현재 페이지 유지
+    }
+  });

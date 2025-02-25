@@ -12,78 +12,9 @@
   font-style: normal;
 }
 
-/* .waring {
-  display : none;
-} */
-
 .waring {
   display: none;
 }
-
-/* @media screen and (max-width: 480px) {
-
-    .main {
-        margin: 5% 5%;
-        width : 90%;
-        /* height : 90vh; */
-/* background-color: black; 
-    }
-    
-    .hf {
-        color : white;
-        text-align: center;
-        padding-top: 10%;
-        font-size: 50%;
-    }
-    
-    .if_reg {
-        color: white;
-        text-align: center;
-        padding-top: 1%;
-        font-size: 100%;
-    }
-    
-    .middle {
-        display : flex;
-        justify-content: center;
-    }
-    
-    .if_bt {
-        margin-top: 13%;
-        width : 70%;
-        height : 5vh;
-        font-size: 15%;
-        border-radius: 6px;
-        background: #FFF;
-        color: #000;
-        /* font-family: "ONE Mobile Title OTF";
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal; 
-    }
-
-    .ip_form {
-        display: flex;
-        flex-direction: column;
-        gap:20px;
-        
-    }
-
-    .form_ct {
-        display : flex;
-        flex-direction: column;
-        gap : 5px;
-    }
-    .ip_ct {
-        display: flex;
-        justify-content: space-around;
-    }
-
-
-    /* 스마트폰 전용 스타일 
-  }
-   */
-
 
 .main {
   max-height: 100vh;

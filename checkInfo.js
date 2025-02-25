@@ -18,8 +18,7 @@ function inputValue() {
             warningName.classList.add('warning');
         } else {
             warningNumber.classList.add('warning');
-        }
-
+        } 
         return false
     } else {
         return true
