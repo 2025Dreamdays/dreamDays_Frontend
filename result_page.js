@@ -26,8 +26,7 @@ window.onload = function () {
     }
 }
 
-
-
+ 
 
 const btn = document.querySelector('.mat_sus');
 
