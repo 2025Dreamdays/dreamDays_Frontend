@@ -123,6 +123,7 @@
         src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-Title.woff') format('woff');
         color: #1C1B1A;
         font-size: 1.2em;
+        width: 90%;
     }
 
     .result_ct {
@@ -135,6 +136,7 @@
         margin-right: 2%;
         margin: 0 1em;
         padding-top: 0px;
+        width: 80%;
     }
 
     .left_title {
@@ -163,6 +165,7 @@
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+        width: 50%;
     }
 }
 
