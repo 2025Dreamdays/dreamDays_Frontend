@@ -1,3 +1,10 @@
+document.querySelector(".checkInfo").addEventListener("click", function(event) {
+    event.preventDefault(); // 기존 링크 이동 차단
+    this.disabled = true; // 버튼 비활성화
+    alert("친구 뽑기 드림데이즈 2일차 2월 28일날 열립니다. 조금만 기달려주세요요 "); // 알림 표시
+}); 
+//위 코드 지워야함 드림데이즈날 꼭
+
 const registerInfo = document.querySelector('.registerInfo');
 const checkInfo = document.querySelector('.checkInfo');
 const orangeDisplay = document.querySelector('.orangeDisplay');
