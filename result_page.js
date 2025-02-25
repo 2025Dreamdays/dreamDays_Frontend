@@ -22,7 +22,7 @@ window.onload = function () {
 
     const mbtiLink = document.getElementById("mbtiq");
     if (mbti) {
-        mbtiLink.setAttribute("href", `https://www.instagram.com/${mbti}/`);
+        mbtiLink.setAttribute("href", `https://www.instagram.com/${instagramId}/`);
     }
 }
 
