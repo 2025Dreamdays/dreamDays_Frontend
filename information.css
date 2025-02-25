@@ -11,6 +11,15 @@
   font-weight: normal;
   font-style: normal;
 }
+input:-webkit-autofill {
+  background-color: #1C1B1A !important;  /* 자동 입력 시 배경색 */
+  color: white !important;  /* 자동 입력 시 글자색 */
+  -webkit-box-shadow: 0 0 0px 1000px white inset !important; /* 배경색 덮어쓰기 */
+}
+
+input:-webkit-autofill::first-line {
+  color: white !important;  /* 첫 줄 글자색 */
+}
 
 .waring {
   display: none;
