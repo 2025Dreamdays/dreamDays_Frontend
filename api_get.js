@@ -27,6 +27,59 @@ async function fetchUserInfo(name, studentNumber) {
     }
 }
 
+
+const checkButton = document.querySelector('.testt')
+
+const drawPage = document.querySelector('.drawPage');
+const checkPage = document.querySelector('.checkPage');
+
+
+function inputValue() {
+    const nameValue = document.getElementById('name').value;
+    const studentNumberValue = document.getElementById('studentNumber').value;
+    if (nameValue === "" || studentNumberValue === "") {
+        if (nameValue === "" && studentNumberValue === "") {
+            warningName.classList.add('warning');
+            warningNumber.classList.add('warning');
+        } else if (nameValue === "") {
+            warningName.classList.add('warning');
+        } else {
+            warningNumber.classList.add('warning');
+        }
+
+        return false
+    } else {
+        return true
+    }
+}
+
+function inputSense(e) {
+    if (e.target.value) {
+        console.log(e.target);
+    }
+}
+
+
+checkButton.addEventListener("click", async function (event) {
+    event.preventDefault();
+    userInfo = await fetchUserInfo(name, studentNumber);
+    () => {
+        if (userInfo && inputValue()) {
+            drawPage.classList.toggle("none");
+            checkPage.classList.toggle("none");
+        }
+    }
+});
+
+
+// checkButton.addEventListener('click', putNone);
+
+window.addEventListener("popstate", function (event) {
+    window.location.href = "index.html";
+});
+
+
+
 // 폼 제출 이벤트 리스너
 document.getElementById("form").addEventListener("submit", async function (event) {
     event.preventDefault();  // 기본 폼 제출 방지
@@ -85,57 +138,3 @@ document.getElementById("form").addEventListener("submit", async function (event
         document.querySelector(".warningNumber").style.display = "block";
     }
 });
-
-
-
-const checkButton = document.querySelector('.testt')
-
-const drawPage = document.querySelector('.drawPage');
-const checkPage = document.querySelector('.checkPage');
-
-
-function inputValue() {
-    const nameValue = document.getElementById('name').value;
-    const studentNumberValue = document.getElementById('studentNumber').value;
-    if (nameValue === "" || studentNumberValue === "") {
-        if (nameValue === "" && studentNumberValue === "") {
-            warningName.classList.add('warning');
-            warningNumber.classList.add('warning');
-        } else if (nameValue === "") {
-            warningName.classList.add('warning');
-        } else {
-            warningNumber.classList.add('warning');
-        }
-
-        return false
-    } else {
-        return true
-    }
-}
-
-function inputSense(e) {
-    if (e.target.value) {
-        console.log(e.target);
-    }
-}
-
-
-checkButton.addEventListener("click", async function (event) {
-    event.preventDefault();
-    userInfo = await fetchUserInfo(name, studentNumber);
-    () => {
-        if (userInfo && inputValue()) {
-            drawPage.classList.toggle("none");
-            checkPage.classList.toggle("none");
-        }
-    }
-});
-
-
-// checkButton.addEventListener('click', putNone);
-
-window.addEventListener("popstate", function (event) {
-    window.location.href = "index.html";
-});
-
-
