@@ -41,7 +41,7 @@
                     <section class="form_ct">
                         <div class="name_ct">
                             <div class="student"> 학번 </div>
-                            <input type="text" id="ip_student" class="ip_st" name="studentNumber"
+                            <input type="text" id="ip_student" class="ip_st" name="studentNumber" minlength="10" maxlength="10"
                                 placeholder="학번을 입력하세요.">
                             <div class="waring"> 학번을 입력해주세요. </div>
                         </div>
@@ -59,7 +59,7 @@
                     <section class="form_ct">
                         <div class="name_ct">
                             <div class="age"> 나이 </div>
-                            <input type="text" id="ip_age" name="age" placeholder="나이를 입력하세요.">
+                            <input type="text" id="ip_age" name="age" maxlength="2" placeholder="나이를 입력하세요.">
                             <div class="waring"> 나이를 입력해주세요. </div>
                         </div>
                     </section>
@@ -133,7 +133,7 @@
                     <section class="form_ct">
                         <div class="name_ct">
                             <div class="one_liner"> 한 줄 소개 </div>
-                            <input type="text" id="ip_line" class="ip_liner" name="one_liner"
+                            <input type="text" id="ip_line" class="ip_liner" name="one_liner" maxlength="20"
                                 placeholder="본인을 한마디로 소개한다면?">
                             <div class="waring"> 한 줄 소개를 작성해주세요. </div>
                         </div>
