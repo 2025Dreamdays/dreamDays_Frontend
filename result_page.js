@@ -18,6 +18,7 @@ window.onload = function () {
     document.getElementById("department").textContent = `${department}`;
     document.getElementById("gender").textContent = `${gender}`;
     document.getElementById("mbti").textContent = `${mbti}`;
+    document.getElementById("mbtiq").textContent = `https://www.instagram.com/${mbti}/`;
     document.getElementById("bio").textContent = `${bio}`;
 }
 
