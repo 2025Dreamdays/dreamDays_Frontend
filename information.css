@@ -51,6 +51,7 @@
 .hf>img {
   height: 20px;
   margin-bottom: 26px;
+  width: 50%;
 }
 
 .if_reg {
@@ -101,6 +102,7 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  color: #FFF;
 }
 
 #dp_major {
@@ -648,6 +650,7 @@
     color: #000;
     margin-top: 10%;
     margin-bottom: 20%;
+    max-width: 500px !important;
   }
 
   .agree_all_ct {
@@ -757,6 +760,11 @@
     margin-top: 1em;
     margin-bottom: 1em;
     font-size: 0.4em;
+  }
+
+  #ip_name,
+  #ip_age {
+    color: #FFF;
   }
 }
 
@@ -1104,6 +1112,11 @@
     margin-bottom: 1em;
     font-size: 0.8em;
   }
+
+  #ip_name,
+  #ip_age {
+    color: #FFF;
+  }
 }
 
 @media all and (min-width:1025px) and (max-width:1919px) {
@@ -1414,6 +1427,11 @@
     margin-bottom: 1em;
     font-size: 0.8em;
   }
+
+  #ip_name,
+  #ip_age {
+    color: #FFF;
+  }
 }
 
 @media all and (min-width:1920px) {
@@ -1723,6 +1741,11 @@
     margin-bottom: 1em;
     font-size: 0.8em;
   }
+
+  #ip_name,
+  #ip_age {
+    color: #FFF;
+  }
 }
 
 @media all and (min-width:0px) and (max-width:800px) {
@@ -1791,5 +1814,10 @@
     background-color: rgba(0, 0, 0, 0.5);
     justify-content: center;
     align-items: center;
+  }
+
+  #ip_name,
+  #ip_age {
+    color: #FFF;
   }
 }
