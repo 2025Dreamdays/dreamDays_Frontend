@@ -18,6 +18,7 @@ async function fetchUserInfo(name, studentNumber) {
             return null;
         }
     } catch (error) {
+        window.location.href="checkInfo.html"
         console.error("백엔드 요청 실패 ❌", error);
         return null;
     }
@@ -107,14 +108,6 @@ function inputSense(e) {
         console.log(e.target);
     }
 }
-
-
-// function putNone() {
-//     if (userInfo&&inputValue()) {
-//         drawPage.classList.toggle("none");
-//         checkPage.classList.toggle("none");
-//     }
-// }
 
 
 checkButton.addEventListener("click", async function (event) {
