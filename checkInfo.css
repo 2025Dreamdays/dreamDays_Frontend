@@ -151,14 +151,16 @@ table {
 
 
 input:-webkit-autofill {
-    background-color: #FF7710 !important;  /* 자동 입력 시 배경색 */
-    color: white!important;  /* 자동 입력 시 글자색 */
-    -webkit-box-shadow: 0 0 0px 1000px white inset !important; /* 배경색 덮어쓰기 */
-  }
-  
-  input:-webkit-autofill::first-line {
-    color: white !important;  /* 첫 줄 글자색 */
-  }
+    background-color: #FF7710 !important;  /* 자동 입력 시 배경색 (오렌지) */
+    -webkit-text-fill-color: white !important;  /* 자동 입력 시 글자색 (흰색) */
+    -webkit-box-shadow: 0 0 0px 1000px #FF7710 inset !important; /* 배경색 강제 덮어쓰기 */
+    transition: background-color 5000s ease-in-out 0s; /* 크롬에서 스타일 유지 */
+}
+
+input:-webkit-autofill::first-line {
+    color: white !important;  /* 자동완성된 첫 줄 글자색 */
+}
+
   
 
 
