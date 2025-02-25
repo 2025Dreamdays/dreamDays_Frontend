@@ -22,7 +22,6 @@ async function fetchUserInfo(name, studentNumber) {
             return null;
         }
     } catch (error) {
-        window.location.href="checkInfo.html"
         console.error("백엔드 요청 실패 ❌", error);
         return null;
     }
@@ -37,19 +36,24 @@ document.getElementById("form").addEventListener("submit", async function (event
     const studentNumber = document.getElementById("studentNumber").value.trim();
 
     // 입력값 검증 (필수 입력)
+    let hasError = false;
+
     if (!name) {
         document.querySelector(".warningName").style.display = "block";
-        return;
+        hasError = true;
     } else {
         document.querySelector(".warningName").style.display = "none";
     }
 
     if (!studentNumber) {
         warningNumber.style.display = "block";
-        return;
+        hasError = true;
     } else {
         warningNumber.style.display = "none";
     }
+
+    // 입력값이 하나라도 없으면 함수 종료
+    if (hasError) return;
 
     // 백엔드에서 사용자 정보 가져오기
     userInfo = await fetchUserInfo(name, studentNumber);
@@ -74,7 +78,11 @@ document.getElementById("form").addEventListener("submit", async function (event
             }
         });
     } else {
-        alert("사용자 정보를 찾을 수 없습니다 ❌");
+        document.querySelector(".warningName").textContent = "올바른 이름을 입력하세요.";
+        document.querySelector(".warningName").style.display = "block";
+
+        document.querySelector(".warningNumber").textContent = "올바른 학번을 입력하세요.";
+        document.querySelector(".warningNumber").style.display = "block";
     }
 });
 
