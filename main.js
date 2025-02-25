@@ -41,7 +41,7 @@ const checkOrangeDisplayLink = () => {
         window.location.href = "checkInfo.html"
     }, 1000)
 }
-checkInfo.addEventListener('click', checkOrangeDisplayLink);
+// checkInfo.addEventListener('click', checkOrangeDisplayLink);
 
 
 
