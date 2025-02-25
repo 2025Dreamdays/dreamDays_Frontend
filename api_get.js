@@ -60,18 +60,6 @@ function inputSense(e) {
 }
 
 
-checkButton.addEventListener("click", async function (event) {
-    event.preventDefault();
-    userInfo = await fetchUserInfo(name, studentNumber);
-    () => {
-        if (userInfo && inputValue()) {
-            drawPage.classList.toggle("none");
-            checkPage.classList.toggle("none");
-        }
-    }
-});
-
-
 // checkButton.addEventListener('click', putNone);
 
 window.addEventListener("popstate", function (event) {
