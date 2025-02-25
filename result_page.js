@@ -1,3 +1,6 @@
+const a = document.querySelector('a');
+
+
 window.onload = function () {
     const urlParams = new URLSearchParams(window.location.search);
     const name = urlParams.get('name');
@@ -14,13 +17,15 @@ window.onload = function () {
     document.getElementById("instagramId").textContent = `${instagramId}`;
     document.getElementById("department").textContent = `${department}`;
     document.getElementById("gender").textContent = `${gender}`;
-    document.querySelector("mbti").textContent = `instagram/${mbti}/`;
+    document.getElementById("mbti").textContent = `${mbti}`;
     document.getElementById("bio").textContent = `${bio}`;
+    a.setAttribute("href", `https://www.instagram.com/$${instagramId}/`)
 }
 
 
 
 const btn = document.querySelector('.mat_sus');
+
 
 
 
