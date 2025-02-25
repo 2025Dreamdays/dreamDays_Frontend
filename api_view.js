@@ -19,7 +19,7 @@ async function getUserInfo() {
 }
 
 // 페이지 로드 후 데이터 처리
-window.onload = async function() {
+window.onload = async function () {
     const userInfo = await getUserInfo();  // api_view.js의 getUserInfo 함수 호출
 
     if (userInfo) {
@@ -32,3 +32,55 @@ window.onload = async function() {
         document.getElementById('re_studentNumber').textContent = "정보를 가져올 수 없습니다";
     }
 };
+
+
+const warningNumber = document.querySelector('.warningNumber');
+const warningName = document.querySelector('.warningName');
+
+const checkButton = document.querySelector('.testt')
+
+const drawPage = document.querySelector('.drawPage');
+const checkPage = document.querySelector('.checkPage');
+
+
+function inputValue() {
+    const nameValue = document.getElementById('name').value;
+    const studentNumberValue = document.getElementById('studentNumber').value;
+    if (nameValue === "" || studentNumberValue === "") {
+        if (nameValue === "" && studentNumberValue === "") {
+            warningName.classList.add('warning');
+            warningNumber.classList.add('warning');
+        } else if (nameValue === "") {
+            warningName.classList.add('warning');
+        } else {
+            warningNumber.classList.add('warning');
+        }
+
+        return false
+    } else {
+        return true
+    }
+}
+
+function inputSense(e) {
+    if (e.target.value) {
+        console.log(e.target);
+    }
+}
+
+
+function putNone() {
+
+    if (userInfo && inputValue()) {
+        drawPage.classList.toggle("none");
+        checkPage.classList.toggle("none");
+    }
+}
+
+
+
+checkButton.addEventListener('click', putNone);
+
+window.addEventListener("popstate", function (event) {
+    window.location.href = "index.html";
+});
