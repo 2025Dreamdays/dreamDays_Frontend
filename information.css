@@ -49,7 +49,6 @@
 
 
 .hf>img {
-  width: 312px;
   height: 20px;
   margin-bottom: 26px;
 }
@@ -60,12 +59,16 @@
 }
 
 .middle {
+  height: 100px;
   display: flex;
   justify-self: center;
 }
 
 .if_bt {
-  margin-top: 20%;
+
+  margin: 0 auto;
+  margin-top: 15%;
+
   width: 885px;
   height: 104px;
   border-radius: 18px;
@@ -77,7 +80,7 @@
   display: flex;
   flex-direction: column;
   justify-self: center;
-  margin-top: 10%;
+  margin-top: 10px;
   gap: 10px;
   color: white;
 }
@@ -481,9 +484,13 @@
     position: relative;
   }
 
+  .middel {
+    margin-top: 6vh;
+  }
+
 
   .hf>img {
-    width: 312px;
+
     height: 10px;
     margin-bottom: 26px;
   }
@@ -515,7 +522,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-top: 20%;
+
     width: 200%;
     /* height: 18px; */
     border-radius: 18px;
@@ -530,7 +537,6 @@
     display: flex;
     flex-direction: column;
     justify-self: center;
-    margin-top: 10%;
     gap: 10px;
     width: 100%;
     color: white;
@@ -771,31 +777,32 @@
 
   .hf {
     color: white;
-    width: 500px;
+
     /* text-align: center; */
     /* padding-top: 15%; */
   }
 
   .hf>img {
-    width: 390px;
     height: 30px;
     margin-bottom: 26px;
   }
 
   .if_reg>img {
-    width: 500px;
+
     height: 70px;
   }
 
   .if_reg {
     color: white;
-    width: 500px;
+
     text-align: center;
     padding-top: 2%;
     height: 27px;
   }
 
-
+  .middel {
+    margin-top: 6vh;
+  }
 
   .if_bt {
     font-family: 'ONE-Mobile-Title';
@@ -804,16 +811,13 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-top: 20%;
+
     width: 200%;
     /* height: 10vh; */
     border-radius: 18px;
     background: #FFF;
   }
 
-  .middle {
-    width: 60%;
-  }
 
   .if_bt img {
     width: 50%;
@@ -823,7 +827,7 @@
     display: flex;
     flex-direction: column;
     justify-self: center;
-    margin-top: 10%;
+
     gap: 10px;
     width: 100%;
     color: white;
@@ -1139,16 +1143,13 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-top: 20%;
+
     width: 200%;
     /* height: 10vh; */
     border-radius: 18px;
     background: #FFF;
   }
 
-  .middle {
-    width: 60%;
-  }
 
   .if_bt img {
     width: 50%;
@@ -1158,7 +1159,7 @@
     display: flex;
     flex-direction: column;
     justify-self: center;
-    margin-top: 10%;
+
     gap: 10px;
     width: 100%;
     color: white;
@@ -1451,16 +1452,14 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-top: 20%;
+
     width: 200%;
     /* height: 10vh; */
     border-radius: 18px;
     background: #FFF;
   }
 
-  .middle {
-    width: 60%;
-  }
+
 
   .if_bt img {
     width: 50%;
@@ -1470,7 +1469,7 @@
     display: flex;
     flex-direction: column;
     justify-self: center;
-    margin-top: 10%;
+
     gap: 10px;
     width: 100%;
     color: white;
