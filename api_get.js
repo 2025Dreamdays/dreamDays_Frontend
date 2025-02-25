@@ -1,4 +1,4 @@
-// let userInfo = null;  // 전역 변수 선언 (사용자 정보 저장)
+let userInfo = null;  // 전역 변수 선언 (사용자 정보 저장)
 
 
 const warningNumber = document.querySelector('.warningNumber');
