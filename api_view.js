@@ -69,8 +69,8 @@ function inputSense(e) {
 }
 
 
-function putNone() {
-    console.log(userInfo);
+const putNone = async function () {
+    const userInfo = await getUserInfo();
     if (userInfo) {
         drawPage.classList.toggle("none");
         checkPage.classList.toggle("none");
