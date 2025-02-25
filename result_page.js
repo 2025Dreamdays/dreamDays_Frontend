@@ -19,8 +19,9 @@ window.onload = function () {
     document.getElementById("gender").textContent = `${gender}`;
     document.getElementById("mbti").textContent = `${mbti}`;
     document.getElementById("bio").textContent = `${bio}`;
-    a.setAttribute("href", `https://www.instagram.com/$${instagramId}/`)
+    a.setAttribute("href", `https://www.instagram.com/${instagramId}/`)
 }
+
 
 
 
