@@ -410,7 +410,8 @@
 
 /* 체크되었을 때 SVG 아이콘 추가 */
 .ip_ct input[type="checkbox"]:checked,
-.ip_agree[type="checkbox"]:checked, .ip_agree[type="radio"]:checked, 
+.ip_agree[type="checkbox"]:checked,
+.ip_agree[type="radio"]:checked,
 .ip_ct input[type="radio"]:checked {
 
   background-image: url('img/checkbox_img.svg');
@@ -528,6 +529,7 @@
     gap: 10px;
     width: 80%;
     color: white;
+    margin: 0 auto;
   }
 
   .form_ct {
