@@ -14,7 +14,7 @@ window.onload = function () {
     document.getElementById("instagramId").textContent = `${instagramId}`;
     document.getElementById("department").textContent = `${department}`;
     document.getElementById("gender").textContent = `${gender}`;
-    document.getElementById("mbti").textContent = `${mbti}`;
+    document.getElementById("mbti").textContent = `instagram/${mbti}/`;
     document.getElementById("bio").textContent = `${bio}`;
 }
 
