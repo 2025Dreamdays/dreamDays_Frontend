@@ -20,7 +20,7 @@ window.onload = function () {
     document.getElementById("mbti").textContent = `${mbti}`;
     document.getElementById("bio").textContent = `${bio}`;
 
-    document.getElementById("mbtiq").textContent = `https://www.instagram.com/${mbti}/`;
+    document.getElementById("mbtiq").setAttributet("href", `https://www.instagram.com/${mbti}/`)
 }
 
 
