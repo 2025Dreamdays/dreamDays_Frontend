@@ -1,5 +1,9 @@
 let userInfo = null;  // 전역 변수 선언 (사용자 정보 저장)
 
+
+const warningNumber = document.querySelector('.warningNumber');
+const warningName = document.querySelector('.warningName');
+
 // 사용자 정보를 백엔드에서 가져오는 함수
 async function fetchUserInfo(name, studentNumber) {
     try {
@@ -41,10 +45,10 @@ document.getElementById("form").addEventListener("submit", async function (event
     }
 
     if (!studentNumber) {
-        document.querySelector(".warningNumber").style.display = "block";
+        warningNumber.style.display = "block";
         return;
     } else {
-        document.querySelector(".warningNumber").style.display = "none";
+        warningNumber.style.display = "none";
     }
 
     // 백엔드에서 사용자 정보 가져오기
@@ -75,8 +79,6 @@ document.getElementById("form").addEventListener("submit", async function (event
 });
 
 
-const warningNumber = document.querySelector('.warningNumber');
-const warningName = document.querySelector('.warningName');
 
 const checkButton = document.querySelector('.testt')
 
