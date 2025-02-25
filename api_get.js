@@ -18,10 +18,12 @@ async function fetchUserInfo(name, studentNumber) {
         if (response.status === 200) {
             return response.data;  // 서버에서 받은 사용자 정보 반환
         } else {
+            alert("서버가 응답하지 않습니다.")
             console.error("서버 응답 오류 ❌", response);
             return null;
         }
     } catch (error) {
+        alert("사용하지 정보가 일치하지 않습니다. 다시 입력해주세요.")
         console.error("백엔드 요청 실패 ❌", error);
         return null;
     }
