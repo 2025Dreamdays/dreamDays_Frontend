@@ -82,6 +82,15 @@
     width: 75px;
 }
 
+#mbtiq {
+    text-decoration: none;
+    color: #FF7710;
+}
+
+#mbtiq:visited {
+    color: black;
+}
+
 
 @media all and (max-width:479px) {
     body {
