@@ -70,8 +70,8 @@ function inputSense(e) {
 
 
 function putNone() {
-
-    if (userInfo && inputValue()) {
+    console.log(userInfo);
+    if (userInfo) {
         drawPage.classList.toggle("none");
         checkPage.classList.toggle("none");
     }
