@@ -24,7 +24,7 @@ async function fetchUserInfo(name, studentNumber) {
 }
 
 // 폼 제출 이벤트 리스너
-document.getElementById("form").addEventListener("submit", async function(event) {
+document.getElementById("form").addEventListener("submit", async function (event) {
     event.preventDefault();  // 기본 폼 제출 방지
 
     // 입력값 가져오기
@@ -53,13 +53,13 @@ document.getElementById("form").addEventListener("submit", async function(event)
         // 사용자 정보가 있으면 화면에 표시
         document.getElementById("re_name").textContent = userInfo.name || "정보 없음";
         document.getElementById("re_studentNumber").textContent = userInfo.studentNumber || "정보 없음";
-        
+
         // 입력 페이지 숨기고 결과 페이지 보이기
         document.querySelector(".checkPage").classList.add("none");
         document.querySelector(".drawPage").classList.remove("none");
 
         // 친구 뽑기 버튼을 클릭했을 때 URL 파라미터로 값을 넘기기
-        document.getElementById('friendsButton').addEventListener('click', function() {
+        document.getElementById('friendsButton').addEventListener('click', function () {
             if (userInfo) {
                 // URL 파라미터로 name과 studentNumber를 넘긴다
                 const url = `loading.html?name=${encodeURIComponent(userInfo.name)}&studentNumber=${encodeURIComponent(userInfo.studentNumber)}`;
@@ -72,3 +72,67 @@ document.getElementById("form").addEventListener("submit", async function(event)
         alert("사용자 정보를 찾을 수 없습니다 ❌");
     }
 });
+
+
+const warningNumber = document.querySelector('.warningNumber');
+const warningName = document.querySelector('.warningName');
+
+const checkButton = document.querySelector('.testt')
+
+const drawPage = document.querySelector('.drawPage');
+const checkPage = document.querySelector('.checkPage');
+
+
+function inputValue() {
+    const nameValue = document.getElementById('name').value;
+    const studentNumberValue = document.getElementById('studentNumber').value;
+    if (nameValue === "" || studentNumberValue === "") {
+        if (nameValue === "" && studentNumberValue === "") {
+            warningName.classList.add('warning');
+            warningNumber.classList.add('warning');
+        } else if (nameValue === "") {
+            warningName.classList.add('warning');
+        } else {
+            warningNumber.classList.add('warning');
+        }
+
+        return false
+    } else {
+        return true
+    }
+}
+
+function inputSense(e) {
+    if (e.target.value) {
+        console.log(e.target);
+    }
+}
+
+
+// function putNone() {
+//     if (userInfo&&inputValue()) {
+//         drawPage.classList.toggle("none");
+//         checkPage.classList.toggle("none");
+//     }
+// }
+
+
+checkButton.addEventListener("click", async function (event) {
+    event.preventDefault();
+    userInfo = await fetchUserInfo(name, studentNumber);
+    () => {
+        if (userInfo && inputValue()) {
+            drawPage.classList.toggle("none");
+            checkPage.classList.toggle("none");
+        }
+    }
+});
+
+
+// checkButton.addEventListener('click', putNone);
+
+window.addEventListener("popstate", function (event) {
+    window.location.href = "index.html";
+});
+
+
